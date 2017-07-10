@@ -23,16 +23,16 @@
 define('DB_NAME', 'talpis');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'username_here');
+define('DB_USER', 'root');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', '');
 
 /** Имя сервера MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'talpis.com');
 
 /** Кодировка базы данных для создания таблиц. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define('DB_COLLATE', '');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'впишите сюда уникальную фразу');
-define('SECURE_AUTH_KEY',  'впишите сюда уникальную фразу');
-define('LOGGED_IN_KEY',    'впишите сюда уникальную фразу');
-define('NONCE_KEY',        'впишите сюда уникальную фразу');
-define('AUTH_SALT',        'впишите сюда уникальную фразу');
-define('SECURE_AUTH_SALT', 'впишите сюда уникальную фразу');
-define('LOGGED_IN_SALT',   'впишите сюда уникальную фразу');
-define('NONCE_SALT',       'впишите сюда уникальную фразу');
+define('AUTH_KEY',         'H@LvS0x0TG8#:Sk+g@xM~,cT2teKV43J?G[lOFZ<?4p{gNhjhjD<)VG4|X4N5o!9');
+define('SECURE_AUTH_KEY',  '`1&#E:AF?!wit1vhBgyFrLSE-L3Zs;>>i+ ]Hp6kJN8MHgSaM#/r/lTlcieUcf< ');
+define('LOGGED_IN_KEY',    'g:tGj!C!`Wy|Mh2Fpe>?8|/wx353]C:xN AT]kj8|O[WH^Mz/,VR1I#qZcG[YeOG');
+define('NONCE_KEY',        'o[byHCP#{U@^AFga$6v+LtF/r3509TMS-G,ZWlyogthZCL)DPu(Ul;>ILKn3 sq0');
+define('AUTH_SALT',        'QWP)`G6WQ*&S#b$vwc2:y>>0eW&r79|uF|Z+VDJ*:?.O0q~NbQ=(74`5dzhw}XdK');
+define('SECURE_AUTH_SALT', 'E;:w6c$Ai^A3%ao*3aC+U158/7lO8_NY~(~cXV)ofJyh{kFSi!)xdPT #c&^-JbF');
+define('LOGGED_IN_SALT',   'u#8vx)ksBF[AD yY#:ZPD^q3#pn;I9nHV#r{;}uesRYme]#K$h}z-MZ~T:~Ge::(');
+define('NONCE_SALT',       '<TQ?([3NG_85%z,Y~Vj60[:]cvqHy~o2MUDy/x;moz+DiMIe.zchv}4Bxkw/;`Vl');
 
 /**#@-*/
 
