@@ -1,0 +1,62 @@
+.modal-overlay {
+  display: none;
+  padding-top: 1px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000000;
+  overflow: auto; }
+  .modal-overlay .modal-content {
+    text-align: center;
+    position: relative;
+    margin: 10vh auto;
+    width: 60vw;
+    padding:30px;
+    background:#fff;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    height:70vh;
+  }
+    .modal-overlay .modal-content .close-button {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 10px;
+      padding: 0px 15px;
+      cursor: pointer;
+      transition: 0.2s linear; }
+      .modal-overlay .modal-content .close-button .one {
+        display: block;
+        height: 30px;
+        width: 2px;
+        background-color: #000;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transition: 0.2s linear; }
+      .modal-overlay .modal-content .close-button .two {
+        display: block;
+        margin-top: -30px;
+        height: 30px;
+        width: 2px;
+        background-color: #000;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transition: 0.2s linear; }
+    .modal-overlay .modal-content .close-button:hover .one {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transition: 0.2s linear;
+      background-color: #000; }
+    .modal-overlay .modal-content .close-button:hover .two {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transition: 0.2s linear;
+      background-color: #000; }
