@@ -1,0 +1,4 @@
+# fastTemplate
+talpis wp
+  ```
+
