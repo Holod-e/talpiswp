@@ -99,8 +99,8 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    wp_enqueue_script('jquery','//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js','','',true); // добавляем свой
 	    wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.min.js','','',true); // бутстрап
 	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
-	    wp_enqueue_script('common', get_template_directory_uri().'/js/common.js','','',true); // и common
 	    wp_enqueue_script('popup', get_template_directory_uri().'/js/popup_script.js','','',true); // и popup
+	    wp_enqueue_script('commonscripts', get_template_directory_uri().'/js/common.js','','',true); // и common
 	}
 }
 

@@ -5,6 +5,7 @@
  * @subpackage your-clean-template-3
  */
 ?>
+	<?php get_template_part('modals'); ?>
 	<footer class="footer">
 		<div class="top-footer">
 			<div class="container">
