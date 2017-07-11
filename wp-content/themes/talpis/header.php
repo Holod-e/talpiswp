@@ -32,11 +32,10 @@
 			<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
 				'theme_location' => 'top', // идентификатор меню, определен в register_nav_menus() в functions.php
 				'container'=> false, // обертка списка, тут не нужна
-					'menu_id' => 'top-nav', // id для ul
-					'items_wrap' => '<nav id="%1$s" class="header-menu navbar-nav %2$s">%3$s</ul>',
-				'menu_class' => 'header-menu', // класс для ul, первые 2 обязательны
-					'walker' => new bootstrap_menu(true) // верхнее меню выводится по разметке бутсрапа, см класс в functions.php, если по наведению 	субменю не раскрывать то передайте false
-					);
+				'menu_id' => 'top-nav', // id для ul
+				'items_wrap' => '<nav id="%1$s" class="header-menu navbar-nav %2$s">%3$s</ul>',
+				'menu_class' => 'header-menu' // класс для ul, первые 2 обязательны
+				);
 				wp_nav_menu($args); // выводим верхнее меню
 			?>
 		</nav>

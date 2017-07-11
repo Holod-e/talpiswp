@@ -22,8 +22,8 @@
 					'theme_location' => 'bottom', // идентификатор меню, определен в register_nav_menus() в function.php
 					'container'=> false, // обертка списка, false - это ничего
 					'menu_class' => 'nav nav-pills bottom-menu footer-nav', // класс для ul
-						'menu_id' => 'footer-nav', // id для ul
-						'fallback_cb' => false
+					'menu_id' => 'footer-nav', // id для ul
+					'fallback_cb' => false
 					);
 				wp_nav_menu($args); // выводим нижние меню
 				?>
