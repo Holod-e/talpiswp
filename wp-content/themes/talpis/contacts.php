@@ -9,12 +9,8 @@
 get_header(); // подключаем header.php ?>
 	<!-- SECTION BLUEHEADER-->
 	<section class="blueheader"></section>
-	<!-- SECTION breadcrumbs-->
-	<section class="breadcrumbs">
-		<div class="container">
-			<p>Главная > Автор</p>
-		</div>
-	</section>
+
+	<?php get_template_part('breadcrumbs'); ?>
 <!-- SECTION 1-->
 	<section class="contacts-sec1">
 		<h2 class="sec-title">Контакты</h2>
