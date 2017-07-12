@@ -154,7 +154,7 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 </section>
-<?php get_template_part('rewiewswhite'); ?>
+<?php get_template_part('partials/rewiewswhite'); ?>
 <!-- SECTION 9-->
 <section class="met-sec7 vsel-sec9">
 	<div class="container">
@@ -195,8 +195,8 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 
-<?php get_template_part('closestseminars'); ?>
-<?php get_template_part('videorewiews'); ?>
-<?php get_template_part('secbio'); ?>
-<?php get_template_part('teraphy'); ?>
+<?php get_template_part('partials/closestseminars'); ?>
+<?php get_template_part('partials/videorewiews'); ?>
+<?php get_template_part('partials/secbio'); ?>
+<?php get_template_part('partials/teraphy'); ?>
 <?php get_footer(); ?>

@@ -9,11 +9,11 @@
 get_header(); // подключаем header.php ?>
 	<!-- SECTION BLUEHEADER-->
 	<section class="blueheader"></section>
-	<?php get_template_part('breadcrumbs'); ?>
+	<?php get_template_part('partials/breadcrumbs'); ?>
 	<!--SECTION 1-->
 	<div class="cources-sec1">
 		<div class="container">
-			<?php get_template_part('subscribeform'); ?>
+			<?php get_template_part('partials/subscribeform'); ?>
 			<h2 class="sec-title">Авторские Тренинги и Семинары</h2>
 			<aside>
 				<ul class="cources-list">
@@ -103,7 +103,7 @@ get_header(); // подключаем header.php ?>
 			</article>
 		</div>
 	</div>
-	<?php get_template_part('rewiewsblue'); ?>
+	<?php get_template_part('partials/rewiewsblue'); ?>
 	<!-- SECTION 2-->
 	<div class="cources-sec2">
 		<div class="container">

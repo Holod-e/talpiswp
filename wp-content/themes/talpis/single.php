@@ -8,7 +8,7 @@ get_header(); // подключаем header.php ?>
 <!-- SECTION BLUEHEADER-->
 <section class="blueheader"></section>
 
-<?php get_template_part('breadcrumbs'); ?>
+<?php get_template_part('partials/breadcrumbs'); ?>
 
 <section>
 	<div class="container">

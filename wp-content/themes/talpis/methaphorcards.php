@@ -133,7 +133,7 @@ get_header(); // подключаем header.php ?>
 			<br> применимый во всех сферах Вашей жизни </p>
 	</div>
 </section>
-<?php get_template_part('rewiewswhite'); ?>
+<?php get_template_part('partials/rewiewswhite'); ?>
 <!-- SECTION 7-->
 <section class="met-sec7">
 	<div class="container">
@@ -170,10 +170,10 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 </section>
-<?php get_template_part('closestseminars'); ?>
-<?php get_template_part('videorewiews'); ?>
-<?php get_template_part('secbio'); ?>
-<?php get_template_part('teraphy'); ?>
-<?php get_template_part('sertificate'); ?>
+<?php get_template_part('partials/closestseminars'); ?>
+<?php get_template_part('partials/partials/videorewiews'); ?>
+<?php get_template_part('partials/secbio'); ?>
+<?php get_template_part('partials/teraphy'); ?>
+<?php get_template_part('partials/sertificate'); ?>
 
 <?php get_footer(); ?>

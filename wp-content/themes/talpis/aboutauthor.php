@@ -25,7 +25,7 @@ get_header(); // подключаем header.php ?>
 			</aside>
 		</div>
 	</section>
-	<?php get_template_part('breadcrumbs'); ?>
+	<?php get_template_part('partials/breadcrumbs'); ?>
 	<!-- SECTION 2-->
 	<section class="author-sec2">
 		<div class="container">
@@ -100,7 +100,7 @@ get_header(); // подключаем header.php ?>
 			</aside>
 		</div>
 	</section>
-	<?php get_template_part('rewiewsblue'); ?>
+	<?php get_template_part('partials/rewiewsblue'); ?>
 	<!-- SECTION AWARDS-->
 	<section class="sec-awards">
 		<div class="container">
@@ -121,5 +121,5 @@ get_header(); // подключаем header.php ?>
 			<div class="slider-dots"></div>
 		</div>
 	</section>
-	<?php get_template_part('teraphy'); ?>
+	<?php get_template_part('partials/teraphy'); ?>
 <?php get_footer(); // подключаем footer.php ?>
