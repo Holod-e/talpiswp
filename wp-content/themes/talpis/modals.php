@@ -178,3 +178,90 @@
 		</div>
 	</div>
 </div>
+
+<!-- MODAL STEP 1-->
+<div class="modal-overlay modal-step modal-step1">
+	<div class="modal-content clearfix">
+		<div class="modal-nav">
+			<a class="prev"></a>
+			<a class="first current">
+				<span>1</span>
+			</a>
+			<a class="second">
+				<span>2</span>
+			</a>
+			<a class="next"></a>
+		</div>
+		<div class="close-button">
+			<span class="one"></span>
+			<span class="two"></span>
+		</div>
+		<div class="form-block">
+			<form>
+				<p class="form-title">Введите ваши данные
+					<br> для бронирования:</p>
+				<p class="form-subtitle">Для подтверждения брони вам необходимо внести
+					<span>100</span>
+				</p>
+				<div class="inputs-wrap">
+					<input type="text" name="name" placeholder="Вадим" class="name">
+					<input type="text" name="phone" placeholder="Номер телефона" class="phone">
+					<input type="text" name="email" placeholder="Email адрес" class="email">
+				</div>
+				<p class="bottom-text">
+					<span>*</span> ПОСЛЕ ПОДТВЕРЖДЕНИЯ ДАННЫХ,
+					<br> ВЫ БУДЕТЕ ПЕРЕНАПРАВЛЕНЫ НА СТРАНИЦУ ОПЛАТЫ</p>
+				<input type="submit" value="Продолжить" class="step-subm-red">
+			</form>
+		</div>
+	</div>
+</div>
+<!-- MODAL STEP 2-->
+<div class="modal-overlay modal-step modal-step2">
+	<div class="modal-content clearfix">
+		<div class="modal-nav">
+			<a class="prev"></a>
+			<a class="first done">
+				<span></span>
+			</a>
+			<a class="second current">
+				<span>2</span>
+			</a>
+			<a class="next"></a>
+		</div>
+		<div class="close-button">
+			<span class="one"></span>
+			<span class="two"></span>
+		</div>
+		<div class="form-block">
+			<form>
+				<p class="form-title">Остался последний шаг!</p>
+				<p class="form-subtitle">Давайте проверим правильность ваших данных:</p>
+				<div class="inputs-wrap">
+					<div class="inp-wrap">
+						<label class="name-label">Ваше имя</label>
+						<input type="text" name="name" class="name">
+					</div>
+					<div class="inp-wrap">
+						<label class="phone-label">Номер телефона</label>
+						<input type="text" name="phone" class="phone">
+					</div>
+					<div class="inp-wrap">
+						<label class="email-label">Email адрес</label>
+						<input type="text" name="email" class="email">
+					</div>
+					<div class="inp-wrap">
+						<label class="seminar-label">Семинар по квантовой психологии</label>
+						<input type="text" name="seminar-name" class="seminar-name">
+					</div>
+				</div>
+				<p class="bottom-text">
+					<span>*</span> СУММА БРОНИРОВАНИЯ:
+					<span class="dollar">100
+						<span>
+				</p>
+				<input type="submit" value="Перейти к оплате" class="step-subm-red">
+			</form>
+		</div>
+	</div>
+</div>

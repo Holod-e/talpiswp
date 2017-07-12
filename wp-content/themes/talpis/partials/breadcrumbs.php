@@ -1,6 +1,6 @@
 <!-- SECTION breadcrumbs-->
 <section class="breadcrumbs">
   <div class="container">
-    <p>Главная > Автор</p>
+    <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
   </div>
 </section>

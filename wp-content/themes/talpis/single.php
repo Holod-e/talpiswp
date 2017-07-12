@@ -32,12 +32,12 @@ get_header(); // подключаем header.php ?>
 </section>
 <!--  COMMENTS SECTION -->
 <section class="comments-section">
-	<div class="container">
-		<h3 class="sec-title">
-			Обсуждение
-		</h3>
+		<div class="container">
+			<h3 class="sec-title">
+				Обсуждение
+			</h3>
+		</div>
 		<?php if (comments_open() || get_comments_number()) comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев ?>
-	</div>
 </section>
 <?php //endwhile; // конец цикла ?>
 <?php get_footer(); // подключаем footer.php ?>
