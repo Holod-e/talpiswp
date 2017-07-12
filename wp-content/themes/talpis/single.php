@@ -42,6 +42,7 @@ get_header(); // подключаем header.php ?>
 		<?php if (comments_open() || get_comments_number()) comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев ?>
 </section>
 <?php //endwhile; // конец цикла ?>
+<?php setPostViews(get_the_ID()); ?>
 <?php get_footer(); // подключаем footer.php ?>
 
 

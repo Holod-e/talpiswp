@@ -17,6 +17,7 @@ get_header(); // подключаем header.php ?>
 			<div class="filters"></div>
 			<div class="row">
 				<div class="col-md-8">
+				<h3 class="sec-title">Статьи</h3>
 					<?php $loop = new WP_Query( array( 'post_type' => 'post') );
 							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 							<?php get_template_part('loop'); // для отображения каждой записи берем шаблон loop.php ?>
