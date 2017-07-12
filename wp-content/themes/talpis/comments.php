@@ -31,7 +31,8 @@
 		<?php endif; // // если комменты есть - конец ?>
 		</div>
 		<div class="comments-respond-block">
-				<div class="container">
+				<a href="#" class="comment-form-open">Коментировать</a>
+				<div class="container hidden-form">
 				<?php if (comments_open()) { // если комментирование включено для данного поста
 					/* ФОРМА КОММЕНТИРОВАНИЯ */
 					$fields =  array( // разметка текстовых полей формы

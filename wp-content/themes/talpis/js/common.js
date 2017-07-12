@@ -70,6 +70,12 @@ $('.question').on('click', function(e){
   $(this).toggleClass('opened');
 })
 
+$('a.comment-form-open').on('click', function(e) {
+  e.preventDefault();
+  $(this).css('display', 'none');
+  $('#respond').slideDown();
+})
+
 
 // cookie script
 	 function getCookie(cname) {
