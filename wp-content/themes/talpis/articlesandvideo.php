@@ -7,7 +7,9 @@
 get_header(); // подключаем header.php ?>
 	<!-- SECTION BLUEHEADER-->
 	<section class="blueheader"></section>
+
 	<?php get_template_part('partials/breadcrumbs'); ?>
+
 	<div class="section-postandvideo">
 		<div class="container">
 			<?php get_template_part('partials/subscribeform'); ?>
@@ -18,11 +20,6 @@ get_header(); // подключаем header.php ?>
 					<?php $loop = new WP_Query( array( 'post_type' => 'post') );
 							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 							<?php get_template_part('loop'); // для отображения каждой записи берем шаблон loop.php ?>
-							<div class="post-wrap">
-								<p class="post-title"><?php the_title(); ?></p>
-								<a href="#modal-contact" class="playbtn" data-video='youtube' data-srcvideo="<?php echo $field = get_field('videolink');?>"></a>
-								</div>
-							</div>
 					<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
@@ -30,4 +27,5 @@ get_header(); // подключаем header.php ?>
 			</div>
 		</div>
 	</div>
+
 <?php get_footer(); // подключаем footer.php ?>

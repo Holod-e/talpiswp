@@ -402,6 +402,8 @@ function dimox_breadcrumbs() {
   }
 } // end of dimox_breadcrumbs()
 
+add_image_size( 'post-normalsize', 260, 294, true );
+
 
 
 
