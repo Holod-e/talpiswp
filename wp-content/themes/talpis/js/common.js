@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	//Check
+	$('.review-slider').slick();
 
 
 });

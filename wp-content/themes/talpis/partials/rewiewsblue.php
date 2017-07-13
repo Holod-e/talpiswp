@@ -1,20 +1,20 @@
 <!-- SECTION REWIEWS-->
-<section class="sec-rewiews">
+<section class="sec-reviews">
   <div class="container">
     <h2 class="sec-title">Отзывы</h2>
-    <div class="rewiew-slider">
-      <div class="rewiew rew1">
-        <div class="author-info">
-          <div class="author-icon"></div>
-          <p class="author-name">Хана Шнайдман</p>
-          <p class="author-prof">Психолог, Израиль</p>
-        </div>
-        <div class="rewiew-info">
-          <p class="rewiew-theme">ВсеЛенская терапия</p>
-          <p class="rewiew-name">Фантастической красоты, глубины и силы работа</p>
-          <p class="rewiew-text">Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!</p>
-        </div>
-      </div>
+    <div class="review-slider">
+      <?php
+        $args = array(
+            'post_type' => 'reviews',
+            'publish' => true,
+            'paged' => get_query_var('paged'),
+        );
+        query_posts($args);
+      if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp ?>
+        <?php get_template_part('loop-reviews'); // для отображения каждой записи берем шаблон loop.php ?>
+      <?php endwhile; // конец цикла
+      else: echo '<p>Нет записей.</p>'; endif; // если записей нет, напишим "простите" ?>
+      <?php pagination(); // пагинация, функция нах-ся в function.php ?>
     </div>
     <div class="slider-nav"></div>
   </div>

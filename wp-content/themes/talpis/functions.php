@@ -117,6 +117,7 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.min.js','','',true); // бутстрап
 	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
 	    wp_enqueue_script('popup', get_template_directory_uri().'/js/popup_script.js','','',true); // и popup
+	    wp_enqueue_script('slick', get_template_directory_uri().'/js/slick.min.js','','',true); // slick slider
 	    wp_enqueue_script('commonscripts', get_template_directory_uri().'/js/common.js','','',true); // и common
 	}
 }
@@ -129,6 +130,8 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
 		wp_enqueue_style( 'animate', get_template_directory_uri().'/css/animate.css' ); // основные стили шаблона
 		wp_enqueue_style( 'popup', get_template_directory_uri().'/css/popup_style.css' ); // основные стили шаблона
+		wp_enqueue_style( 'slick', get_template_directory_uri().'/css/slick.css' ); // основные стили шаблона
+		wp_enqueue_style( 'slick-theme', get_template_directory_uri().'/css/slick-theme.css' ); // основные стили шаблона
 		wp_enqueue_style( 'mainstyel', get_template_directory_uri().'/css/main.css' ); // основные стили шаблона
 	}
 }
