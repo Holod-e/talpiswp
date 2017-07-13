@@ -1,4 +1,16 @@
 <!-- MODALS-->
+<div id="modal-video" class="modal-overlay">
+	<div class="modal-content">
+			<div class="close-button">
+					<div class="one"></div>
+					<div class="two"></div>
+			</div>
+			<!-- content -->
+			<div id="video-popup"></div>
+			<!-- end content -->
+
+	</div>
+</div>
 <!-- MODAL TETA PHILLING-->
 <div id="modal-tetaPrice" class="modal-overlay modal-seminar-price">
 	<div class="modal-content">

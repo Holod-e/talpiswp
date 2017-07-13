@@ -20,11 +20,18 @@ get_header(); // подключаем header.php ?>
 				<h3 class="sec-title">Статьи</h3>
 					<?php $loop = new WP_Query( array( 'post_type' => 'post') );
 							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-							<?php get_template_part('loop'); // для отображения каждой записи берем шаблон loop.php ?>
+							<?php get_template_part('loop');?>
 					<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
-				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<h3 class="sec-title">Видео</h3>
+					<?php $loop = new WP_Query( array( 'post_type' => 'video') );
+							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<?php get_template_part('loop-video');?>
+					<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
 			</div>
 		</div>
 	</div>

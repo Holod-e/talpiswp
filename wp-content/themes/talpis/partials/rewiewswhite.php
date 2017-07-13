@@ -16,6 +16,6 @@
       else: echo '<p>Нет записей.</p>'; endif; // если записей нет, напишим "простите" ?>
       <?php pagination(); // пагинация, функция нах-ся в function.php ?>
     </div>
-    <div class="slider-nav"></div>
+    <!-- <div class="slider-nav"></div> -->
   </div>
 </section>

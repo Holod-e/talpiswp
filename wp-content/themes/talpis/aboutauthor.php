@@ -20,7 +20,7 @@ get_header(); // подключаем header.php ?>
 					<p class="widget-title">Личная консультация</p>
 					<p class="widget-text">Вернём управление Вашей жизнью
 						<br> в Ваши руки</p>
-					<a class="btn btn-red">Записаться</a>
+					<a href="#modal-individual-teraphy" class="btn btn-red">Записаться</a>
 				</div>
 			</aside>
 		</div>

@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	$('.review-slider').slick();
+	$('.review-slider').slick({
+    dots: true
+  });
 
 
 });

@@ -1,3 +1,10 @@
+<?php
+/**
+ * Цикл отзывов
+ * @package WordPress
+ * @subpackage your-clean-template-3
+ */
+?>
 <div class="review" id="reviews-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="author-info">
 		<div class="author-icon">
