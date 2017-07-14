@@ -441,5 +441,4 @@ function setPostViews($postID) {
     }
 }
 
-
 ?>

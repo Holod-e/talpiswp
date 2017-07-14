@@ -5,7 +5,7 @@
  * @subpackage your-clean-template-3
  */
 ?>
-<div class="seminar" id="seminar-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
+<div class="seminar f1 f2 f3" id="seminar-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
 	<div class="seminar-body">
 		<div class="seminar-images">
 		<?php
@@ -34,7 +34,7 @@
 					<span><?php the_field('seminar-start-date'); ?></span>
 				</p>
 				<p class="start-date">Окончание: <br>
-					<span><?php the_field('finish-start-date'); ?></span>
+					<span><?php the_field('seminar-finish-date'); ?></span>
 				</p>
 			</div>
 		</div>
@@ -44,5 +44,10 @@
 		<p class="seminar-price"><?php the_field('seminar-price'); ?></p>
 		<p class="seminar-left-seats"><?php the_field('seminar-left-seats'); ?></p>
 		<a href="#" class="seminar-btn">Забронировать</a>
+	</div>
+	<div class="seminar-hidden">
+		<input type="hidden" class="seminar-name" name="seminar-name" value="<?php the_field('seminar-name')?>">
+		<input type="hidden" class="seminar-place" name="seminar-place" value="<?php the_field('seminar-place')?>">
+		<input type="hidden" class="trainer-name" name="trainer-name" value="<?php the_field('trainer-name')?>">
 	</div>
 </div>

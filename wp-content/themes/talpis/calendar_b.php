@@ -16,14 +16,17 @@ get_header(); // подключаем header.php ?>
 			<h2 class="sec-title">Календарь</h2>
 			<!-- FILTERS -->
 			<?php get_template_part('partials/calendar-filter'); ?>
+			<?php if ($_GET && !empty($_GET)) { // если было передано что-то из формы
+				go_filter(); // запускаем функцию фильтрации
+			} ?>
 			<div class="row">
 				<div class="col-md-8">
 					<?php
 						$args = array(
-							'post_type'  => 'seminar'
-							);
-						$loop = new WP_Query( $args );
-							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+										'post_type' => 'seminar'
+									);
+						$loop = new query_posts( $args );
+								if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 								<?php get_template_part('loop-seminar');?>
 						<?php endwhile; ?>
 						<?php endif; ?>

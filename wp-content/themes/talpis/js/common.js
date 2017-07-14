@@ -3,10 +3,47 @@ $(document).ready(function() {
     dots: true
   });
 
+  $('form.filter select.seminar-place').on('change', function(event) {
+    event.preventDefault();
+    var seminarPlace = $( ".seminar-place option:selected").val();
+    if (seminarPlace != '') {
+      $('.seminar.f1').removeClass('f1');
+      $('input[value="'+ seminarPlace +'"]').closest('.seminar').addClass('f1');
+    }
+    else {
+      $('.seminar').addClass('f1');
+    }
+  });
+
+  $('form.filter select.seminar-name').on('change', function(event) {
+    event.preventDefault();
+    var seminarName = $( ".seminar-name option:selected").val();
+    if (seminarName != '') {
+      $('.seminar.f2').removeClass('f2');
+      $('input[value="'+ seminarName +'"]').closest('.seminar').addClass('f2');
+    }
+    else {
+      $('.seminar').addClass('f2');
+    }
+  });
+
+  $('form.filter select.trainer-name').on('change', function(event) {
+    event.preventDefault();
+    var trainerName = $( ".trainer-name option:selected").val();
+    if (trainerName != '') {
+      $('.seminar.f3').removeClass('f3');
+      $('input[value="'+ trainerName +'"]').closest('.seminar').addClass('f3');
+    }
+    else {
+      $('.seminar').addClass('f3');
+    }
+  });
+
+
 
 });
 
-$('.rewiews-block .read-more').on('click', function (e) {
+$('.rewiews-block .read-more').on('click', function(e) {
   e.preventDefault();
   $(this).css('display', 'none');
   $(this).closest('.rewiew-info').find('.rewiew-text').css('height', 'auto');
