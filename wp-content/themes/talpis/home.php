@@ -21,49 +21,49 @@ get_header(); // подключаем header.php ?>
 		<p class="sec-subtitle">Наиболее эффективные трансформационные и терапевтические инструменты,
 			<br> проверенные многолетней практикой и результатами клиентов</p>
 		<div class="courses">
-			<div class="course course1">
+			<a href="/trainings-and-seminars/metaphorical-cards" class="course course1">
 				<div class="course-title">Метафорические карты</div>
 				<div class="course-info">Простой способ
 					<br> познакомиться с методикой и научиться работе с картами </div>
-			</div>
-			<div class="course course2">
+			</a >
+			<a  href="/trainings-and-seminars/assemblage-point" class="course course2">
 				<div class="course-title">Точка Сборки</div>
 				<div class="course-info">Легкий и веселый
 					<br> обучающий семинар
 					<br> по квантовой психологии</div>
-			</div>
-			<div class="course course3">
+			</a>
+			<a  href="/trainings-and-seminars/universe-therapy" class="course course3">
 				<div class="course-title">ВсеЛенская терапия</div>
 				<div class="course-info">Обучение авторскому
 					<br> методу терапии
 					<br> Леонида Тальписа</div>
-			</div>
-			<div class="course course4">
+			</a>
+			<a   href="/trainings-and-seminars/theta-healing" class="course course4">
 				<div class="course-title">Тета-Хилинг</div>
 				<div class="course-info">Полноценный обучающий курс
 					<br> + дополнения
 					<br> от Леонида Тальписа</div>
-			</div>
-			<div class="course course5">
+			</a>
+			<a   href="/trainings-and-seminars/universal-therapy-additions" class="course course5">
 				<div class="course-title">ВсеЛенские
 					<br> дополнения 1-2-3</div>
 				<div class="course-info">Работа с актуальными темами для тех, кто уже прошел обучение методу </div>
-			</div>
-			<div class="course course6">
+			</a>
+			<a  href="/trainings-and-seminars/course-for-trainers" class="course course6">
 				<div class="course-title">Тренерский курс</div>
 				<div class="course-info">Только для профессионалов, желающих преподавать ВсеЛенскую терапию</div>
-			</div>
-			<div class="course course7">
+			</a>
+			<a  href="/trainings-and-seminars/" class="course course7">
 				<div class="course-title">Системное моделирование</div>
 				<div class="course-info">Авторский
 					<br> обучающий семинар
 					<br> Александра Зелинского</div>
-			</div>
-			<div class="course course8">
+			</a>
+			<a  href="/trainings-and-seminars/batch-training" class="course course8">
 				<div class="course-title">Пакетное обучение</div>
 				<div class="course-info"> Экономьте на обучении,
 					<br> пройдя полный пакет в удобное вам время. </div>
-			</div>
+			</a>
 		</div>
 	</div>
 </section>

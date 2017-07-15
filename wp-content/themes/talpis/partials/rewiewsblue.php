@@ -14,7 +14,7 @@
         <?php get_template_part('loop-reviews'); // для отображения каждой записи берем шаблон loop.php ?>
       <?php endwhile; // конец цикла
       else: echo '<p>Нет записей.</p>'; endif; // если записей нет, напишим "простите" ?>
-      <?php pagination(); // пагинация, функция нах-ся в function.php ?>
+      <?php // pagination(); // пагинация, функция нах-ся в function.php ?>
     </div>
     <!-- <div class="slider-nav"></div> -->
   </div>

@@ -1,7 +1,7 @@
 
 <?php
 /**
- * Template Name: Курсы (cources.php)
+ * Template Name: Тренигни и семинары (cources.php)
  *
  * @package WordPress
  * @subpackage your-clean-template-3
@@ -18,25 +18,25 @@ get_header(); // подключаем header.php ?>
 			<aside>
 				<ul class="cources-list">
 					<li>
-						<a href="/metaphor-cards/">Метафорические карты</a>
+						<a href="/trainings-and-seminars/metaphorical-cards">Метафорические карты</a>
 					</li>
 					<li>
-						<a href="/tochka-sborki/">Точка Сборки</a>
+						<a href="/trainings-and-seminars/assemblage-point">Точка Сборки</a>
 					</li>
 					<li>
-						<a href="/vselenskaya-teraphy/">ВсеЛенская Терапия</a>
+						<a href="/trainings-and-seminars/universe-therapy">ВсеЛенская Терапия</a>
 					</li>
 					<li>
-						<a href="/vselenskaya-teraphy-additions/">ВсеЛенская Терапия. Дополнения </a>
+						<a href="/trainings-and-seminars/universal-therapy-additions">ВсеЛенская Терапия. Дополнения </a>
 					</li>
 					<li>
-						<a href="/teta-hilling/">Тета-Хилинг Базовый</a>
+						<a href="/trainings-and-seminars/theta-healing"">Тета-Хилинг Базовый</a>
 					</li>
 					<li>
 						<a href="/teta-hilling/">Тета-Хилинг Продвинутый</a>
 					</li>
 					<li>
-						<a href="/trainer-course/">Тренерский курс</a>
+						<a href="/trainings-and-seminars/course-for-trainers">Тренерский курс</a>
 					</li>
 					<li>
 						<a href="/#/">Личная терапия</a>
@@ -45,29 +45,29 @@ get_header(); // подключаем header.php ?>
 						<a href="/#/">Партнерские тренинги и семинары</a>
 					</li>
 					<li>
-						<a href="/batch-learning/" >Пакетное обучение</a>
+						<a href="/trainings-and-seminars/batch-training" >Пакетное обучение</a>
 					</li>
 				</ul>
 				<div class="widgets"></div>
 			</aside>
 			<article>
 				<div class="cources">
-					<a class="cource c1" href="/metaphor-cards/">
+					<a class="cource c1" href="/trainings-and-seminars/metaphorical-cards">
 						<div class="cource-icon"></div>
 						<p class="cource-name">Метафорические карты</p>
 						<p class="cource-info">Простой способ познакомиться с методикой и научиться работе с картами</p>
 					</a>
-					<a class="cource c2" href="/tochka-sborki/">
+					<a class="cource c2" href="/trainings-and-seminars/assemblage-point">
 						<div class="cource-icon"></div>
 						<p class="cource-name">Точка Сборки</p>
 						<p class="cource-info">Легкий и веселый обучающий семинар по квантовой психологии</p>
 					</a>
-					<a class="cource c3" href="/vselenskaya-teraphy/">
+					<a class="cource c3" href="/trainings-and-seminars/universe-therapy">
 						<div class="cource-icon" ></div>
 						<p class="cource-name">ВсеЛенская терапия</p>
 						<p class="cource-info">Обучение авторскому методу терапии Леонида Тальписа</p>
 					</a>
-					<a class="cource c4" href="/vselenskaya-teraphy-additions/">
+					<a class="cource c4" href="/trainings-and-seminars/universal-therapy-additions">
 						<div class="cource-icon"></div>
 						<p class="cource-name big">ВсеЛенские
 							<br> дополнения 1-2-3</p>
@@ -79,12 +79,12 @@ get_header(); // подключаем header.php ?>
 							<br> моделирование</p>
 						<p class="cource-info">Авторский обучающий семинар Александра Зелинского</p>
 					</a>
-					<a class="cource c6" href="/teta-hilling/">
+					<a class="cource c6" href="/trainings-and-seminars/theta-healing">
 						<div class="cource-icon"></div>
 						<p class="cource-name">Тета-Хилинг</p>
 						<p class="cource-info">Продвинутая авторская методика для проработки актуальных тем</p>
 					</a>
-					<a class="cource c7"  href="/trainer-course/">
+					<a class="cource c7"  href="/trainings-and-seminars/course-for-trainers">
 						<div class="cource-icon"></div>
 						<p class="cource-name">Тренерский курс</p>
 						<p class="cource-info">Только для профессионалов, желающих преподавать ВсеЛенскую терапию </p>
@@ -94,7 +94,7 @@ get_header(); // подключаем header.php ?>
 						<p class="cource-name">Групповая терапия</p>
 						<p class="cource-info">Работа с актуальными темами для тех, кто уже прошел обучение методу</p>
 					</a>
-					<a class="cource c9" href="/batch-learning/" >
+					<a class="cource c9" href="/trainings-and-seminars/batch-training" >
 						<div class="cource-icon"></div>
 						<p class="cource-name">Пакетное обучение</p>
 						<p class="cource-info"> Экономьте на обучении, пройдя полный пакет в удобное вам время. </p>
