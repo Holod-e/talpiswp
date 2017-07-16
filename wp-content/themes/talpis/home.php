@@ -79,8 +79,8 @@ get_header(); // подключаем header.php ?>
 				<br> и ровно там, где у человека выбор появляется,
 				<br> задача психотерапевта заканчивается.</p>
 			<div class="buttons">
-				<a class="btn btn-red">ПОДРОБНЕЕ О ТРЕНИНГАХ</a>
-				<a class="all-video">Смотреть все видео ></a>
+				<a href="/trainings-and-seminars/" class="btn btn-red">ПОДРОБНЕЕ О ТРЕНИНГАХ</a>
+				<a href="/articles-and-videos/" class="all-video">Смотреть все видео ></a>
 			</div>
 		</div>
 		<div class="right-block">
@@ -127,7 +127,7 @@ get_header(); // подключаем header.php ?>
 				<br> Леонид Тальпис</h2>
 			<p class="talpis-text">Леонид Тальпис – практикующий психолог, потомственный врач, автор уникальной терапевтической методики под названием «ВсеЛенская терапия» и ряда дополнений к популярным психологическим направлениям, официальный представитель метафорических карт
 				OH-CARDS в России, тренер международного уровня.</p>
-			<a class="more-about btn">ПОДРОБНЕЕ ОБ АВТОРЕ</a>
+			<a href="/about-author/" class="more-about btn">ПОДРОБНЕЕ ОБ АВТОРЕ</a>
 		</div>
 		<div class="banner2"> </div>
 	</div>

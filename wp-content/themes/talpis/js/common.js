@@ -39,8 +39,6 @@ $(document).ready(function() {
     }
   });
 
-
-
 });
 
 $('.rewiews-block .read-more').on('click', function(e) {
@@ -75,6 +73,16 @@ $('.vseladd-additions .btn-more').on('click', function(e) {
     $('.seminar-plan.active').slideUp().removeClass('active');
     $('.hidden-'+target).slideDown().addClass('active');
   }
+});
+
+$('.cources .cource').hover(function(){
+  var targetLink = $(this).attr('href');
+  $('.cources-list a[href="'+targetLink+'"]').toggleClass('active');
+});
+
+$('.cources-list a').hover(function(){
+  var targetLink = $(this).attr('href');
+  $('.cources .cource[href="'+targetLink+'"]').toggleClass('active');
 });
 
 
