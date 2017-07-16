@@ -85,6 +85,14 @@ $('.cources-list a').hover(function(){
   $('.cources .cource[href="'+targetLink+'"]').toggleClass('active');
 });
 
+// $('.form-control').on('focus', function() {
+//   $('#searchform').addClass('active');
+// });
+
+// $('.form-control').on('focusout', function() {
+//   $('#searchform').removeClass('active');
+// });
+
 
 
 

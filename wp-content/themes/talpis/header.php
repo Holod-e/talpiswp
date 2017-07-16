@@ -28,6 +28,7 @@
 <body <?php body_class(); // все классы для body ?>>
 	<header class="main-header">
 		<a class="logo">Talpis.com</a>
+			<?php get_template_part('searchform'); ?>
 		<nav class="header-menu">
 			<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
 				'theme_location' => 'top', // идентификатор меню, определен в register_nav_menus() в functions.php

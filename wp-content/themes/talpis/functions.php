@@ -114,11 +114,9 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    if(is_admin()) return false; // если мы в админке - ничего не делаем
 	    wp_deregister_script('jquery'); // выключаем стандартный jquery
 	    wp_enqueue_script('jquery','//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js','','',true); // добавляем свой
-	    wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.min.js','','',true); // бутстрап
-	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
 	    wp_enqueue_script('popup', get_template_directory_uri().'/js/popup_script.js','','',true); // и popup
 	    wp_enqueue_script('slick', get_template_directory_uri().'/js/slick.min.js','','',true); // slick slider
-	    wp_enqueue_script('commonscripts', get_template_directory_uri().'/js/common.js','','',true); // и common
+	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
 	}
 }
 
@@ -440,5 +438,24 @@ function setPostViews($postID) {
         update_post_meta($postID, $count_key, $count);
     }
 }
+
+add_action( 'init', 'update_my_custom_type', 99 );
+
+/**
+ * update_my_custom_type
+ *
+ * @author  Joe Sexton <joe@webtipblog.com>
+ */
+function update_my_custom_type() {
+	global $wp_post_types;
+
+	if ( post_type_exists( 'seminar' ) ) {
+		// exclude from search results
+		$wp_post_types['seminar']->exclude_from_search = true;
+		$wp_post_types['reviews']->exclude_from_search = true;
+		$wp_post_types['trainer']->exclude_from_search = true;
+	}
+}
+
 
 ?>
