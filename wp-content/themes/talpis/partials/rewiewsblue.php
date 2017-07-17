@@ -8,14 +8,15 @@
             'post_type' => 'reviews',
             'publish' => true,
             'paged' => get_query_var('paged'),
+            // 'posts_per_page' => 4
         );
         query_posts($args);
       if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp ?>
         <?php get_template_part('loop-reviews'); // для отображения каждой записи берем шаблон loop.php ?>
       <?php endwhile; // конец цикла
       else: echo '<p>Нет записей.</p>'; endif; // если записей нет, напишим "простите" ?>
-      <?php // pagination(); // пагинация, функция нах-ся в function.php ?>
     </div>
     <!-- <div class="slider-nav"></div> -->
+     <?php //pagination(); // пагинация, функция нах-ся в function.php ?>
   </div>
 </section>

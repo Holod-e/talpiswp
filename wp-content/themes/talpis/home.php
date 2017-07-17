@@ -70,51 +70,53 @@ get_header(); // подключаем header.php ?>
 <!-- SECTION 3-->
 <section class="home-sec3">
 	<div class="container">
-		<div class="left-block">
-			<h2 class="sec-title">Превращая жизнь в результате мы теряем саму жизнь</h2>
-			<p class="sec-subtitle">Из интервью с Леонидом Тальписом</p>
-			<div class="video"></div>
-			<p class="text">На мой взгляд, психотерапевт похож на экскурсовода.
-				<br> Его основная задача – сделать так, чтобы у человека появился выбор,
-				<br> и ровно там, где у человека выбор появляется,
-				<br> задача психотерапевта заканчивается.</p>
-			<div class="buttons">
-				<a href="/trainings-and-seminars/" class="btn btn-red">ПОДРОБНЕЕ О ТРЕНИНГАХ</a>
-				<a href="/articles-and-videos/" class="all-video">Смотреть все видео ></a>
-			</div>
-		</div>
-		<div class="right-block">
-			<div class="rewiews-block">
-				<p class="rewiews-title">Отзывы</p>
-				<div class="rewiew rew1">
-					<div class="author-info">
-						<div class="author-icon"></div>
-						<p class="author-name">Хана Шнайдман</p>
-						<p class="author-prof">Психолог, Израиль</p>
-					</div>
-					<div class="rewiew-info">
-						<p class="rewiew-name">Фантастической красоты, глубины и силы работа</p>
-						<p class="rewiew-theme">ВсеЛенская терапия</p>
-						<p class="rewiew-text">Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!</p>
-						<a href="#" class="read-more">Читать больше ></a>
-					</div>
-				</div>
-				<div class="rewiew rew2">
-					<div class="author-info">
-						<div class="author-icon"></div>
-						<p class="author-name">Ольга Тетерина</p>
-						<p class="author-prof">Психолог, Москва</p>
-					</div>
-					<div class="rewiew-info">
-						<p class="rewiew-name">Фантастической красоты, глубины и силы работа</p>
-						<p class="rewiew-theme">ВсеЛенская терапия</p>
-						<p class="rewiew-text">Работу Леонида Борисовича лично мне трудно назвать работой. По моему мнению — это уже искусство на грани волшебства. Картинки, улыбка, провокативная фраза… — и… вдох-выдох, вдох-выдох — человек ожил, задышал, щёчки порозовели, глазки заблестели!
-							Легко! Изящно! Очень бережно, я бы даже сказала — ласково! </p>
-						<a href="#" class="read-more">Читать больше ></a>
-					</div>
+		<div class="row">
+			<div class="col-md-7 left-block">
+				<h2 class="sec-title">Превращая жизнь в результате мы теряем саму жизнь</h2>
+				<p class="sec-subtitle">Из интервью с Леонидом Тальписом</p>
+				<div class="video"></div>
+				<p class="text">На мой взгляд, психотерапевт похож на экскурсовода.
+					<br> Его основная задача – сделать так, чтобы у человека появился выбор,
+					<br> и ровно там, где у человека выбор появляется,
+					<br> задача психотерапевта заканчивается.</p>
+				<div class="buttons">
+					<a href="/trainings-and-seminars/" class="btn btn-red">ПОДРОБНЕЕ О ТРЕНИНГАХ</a>
+					<a href="/articles-and-videos/" class="all-video">Смотреть все видео ></a>
 				</div>
 			</div>
-			<div class="banner"></div>
+			<div class="col-md-5 right-block">
+				<div class="rewiews-block">
+					<p class="rewiews-title">Отзывы</p>
+					<div class="rewiew rew1">
+						<div class="author-info">
+							<div class="author-icon"></div>
+							<p class="author-name">Хана Шнайдман</p>
+							<p class="author-prof">Психолог, Израиль</p>
+						</div>
+						<div class="rewiew-info">
+							<p class="rewiew-name">Фантастической красоты, глубины и силы работа</p>
+							<p class="rewiew-theme">ВсеЛенская терапия</p>
+								<p class="rewiew-text">Фантастической красоты, глубины и силы работа. Правильная, точная, чистая. Всем, кто живет и думает, а еще больше тем, кто думает и не живет — срочно, немедленно и необходимо — к Тальпису!</p>
+							<a href="#" class="read-more">Читать больше ></a>
+						</div>
+					</div>
+					<div class="rewiew rew2">
+						<div class="author-info">
+							<div class="author-icon"></div>
+							<p class="author-name">Ольга Тетерина</p>
+							<p class="author-prof">Психолог, Москва</p>
+						</div>
+						<div class="rewiew-info">
+							<p class="rewiew-name">Фантастической красоты, глубины и силы работа</p>
+							<p class="rewiew-theme">ВсеЛенская терапия</p>
+							<p class="rewiew-text">Работу Леонида Борисовича лично мне трудно назвать работой. По моему мнению — это уже искусство на грани волшебства. Картинки, улыбка, провокативная фраза… — и… вдох-выдох, вдох-выдох — человек ожил, задышал, щёчки порозовели, глазки заблестели!
+									Легко! Изящно! Очень бережно, я бы даже сказала — ласково! </p>
+							<a href="#" class="read-more">Читать больше ></a>
+						</div>
+					</div>
+				</div>
+				<?php get_template_part('partials/banner');?>
+			</div>
 		</div>
 	</div>
 </section>
@@ -129,7 +131,7 @@ get_header(); // подключаем header.php ?>
 				OH-CARDS в России, тренер международного уровня.</p>
 			<a href="/about-author/" class="more-about btn">ПОДРОБНЕЕ ОБ АВТОРЕ</a>
 		</div>
-		<div class="banner2"> </div>
+		<?php get_template_part('partials/banner2');?>
 	</div>
 </section>
 <?php get_footer(); // подключаем footer.php ?>

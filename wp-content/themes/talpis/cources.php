@@ -105,22 +105,26 @@ get_header(); // подключаем header.php ?>
 	<div class="cources-sec2">
 		<div class="container">
 			<div class="row clearfix">
-				<article>
-					<div class="post-image"></div>
-					<p class="post-title">Леонид Тальпис:
-						<br> «Мы все время пытаемся превратить жизнь в достижение результата и из-за этого теряем сам процесс жизни»</p>
-					<p class="text">О том, как найти в себе скрытые возможности для получения личного опыта и разрешения собственных вопросов, а также приобретения практических навыков для работы с клиентами.
-						<br>
-						<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-						laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-				</article>
-				<aside>
-					<div class="banner"></div>
-					<div class="widget-postandvideo2"></div>
-				</aside>
+				<div class="col-md-7">
+					<article>
+						<div class="post-image"></div>
+						<p class="post-title">Леонид Тальпис:
+							<br> «Мы все время пытаемся превратить жизнь в достижение результата и из-за этого теряем сам процесс жизни»</p>
+						<p class="text">О том, как найти в себе скрытые возможности для получения личного опыта и разрешения собственных вопросов, а также приобретения практических навыков для работы с клиентами.
+							<br>
+							<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+							laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+					</article>
+				</div>
+				<div class="col-md-5">
+					<aside>
+						<?php get_template_part('partials/banner'); ?>
+						<div class="widget-postandvideo2"></div>
+					</aside>
+				</div>
 			</div>
-			<div class="banner"></div>
+			<?php get_template_part('partials/banner2'); ?>
 		</div>
 	</div>
 <?php get_footer(); // подключаем footer.php ?>
