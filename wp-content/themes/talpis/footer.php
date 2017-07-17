@@ -9,7 +9,11 @@
 	<footer class="footer">
 		<div class="top-footer">
 			<div class="container">
-				<input placeholder="Введите запрос" class="search">
+				<form role="search" id="search-footer" method="get" class="search-form form-inline" action="<?php echo home_url( '/' ); ?>">
+						<input type="search" class=" search no-livesearch" id="search-field2" placeholder="Введите запрос"  name="s">
+					<!-- <button type="submit" class="search-btn">найти</button> -->
+				</form>
+				<!-- <input placeholder="Введите запрос" class="search"> -->
 				<p class="place">Москва, ул. Челюскинская, 9</p>
 				<p class="email-adress">contact@talpis.com</p>
 				<p class="phone-number">8 (495) 589-72-27</p>

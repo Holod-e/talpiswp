@@ -30,10 +30,7 @@ get_header(); // подключаем header.php ?>
 						<a href="/trainings-and-seminars/universal-therapy-additions">ВсеЛенская Терапия. Дополнения </a>
 					</li>
 					<li>
-						<a href="/trainings-and-seminars/theta-healing"">Тета-Хилинг Базовый</a>
-					</li>
-					<li>
-						<a href="/teta-hilling/">Тета-Хилинг Продвинутый</a>
+						<a href="/trainings-and-seminars/theta-healing"">Тета-Хилинг</a>
 					</li>
 					<li>
 						<a href="/trainings-and-seminars/course-for-trainers">Тренерский курс</a>

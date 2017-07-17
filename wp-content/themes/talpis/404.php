@@ -5,14 +5,27 @@
  * @subpackage your-clean-template-3
  */
 get_header(); // Подключаем header.php ?>
+<section class="page404-sec1">
+	<div class="container">
+		<div class="row">
+				<h1>404</h1>
+				<p class="title">Страница не найдена</p>
+				<p class="subtitle">
+					Вернуться на <a href="/main/">главную</a> страницу сайта
+				</p>
+				<form role="search" id="searchresultsSearch" method="get" class="search-form form-inline" action="<?php echo home_url( '/' ); ?>">
+						<input type="search" class="searchinput no-livesearch" id="search-field3" placeholder="Введите для поиска"  name="s">
+					<button type="submit" class="search-btn">найти</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="<?php content_class_by_sidebar(); // функция подставит класс в зависимости от того есть ли сайдбар, лежит в functions.php ?>">
-				<h1>Ой, это 404!</h1>
-				<p>Блаблабла 404 Блаблабла</p>
-			</div>
-			<?php get_sidebar(); // подключаем sidebar.php ?>
+			<div class="col-md-6"></div>
+			<div class="col-md-6"></div>
 		</div>
 	</div>
 </section>
