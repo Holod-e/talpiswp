@@ -69,8 +69,8 @@ if (!function_exists('pagination')) { // если ф-я уже есть в до�
 			'format' => '?paged=%#%', // формат, %#% будет заменено
 			'current' => max(1, get_query_var('paged')), // текущая страница, 1, если $_GET['page'] не определено
 			'type' => 'array', // нам надо получить массив
-			'prev_text'    => 'Назад', // текст назад
-	    	'next_text'    => 'Вперед', // текст вперед
+			'prev_text'    => '', // текст назад
+	    'next_text'    => '', // текст вперед
 			'total' => $wp_query->max_num_pages, // общие кол-во страниц в пагинации
 			'show_all'     => false, // не показывать ссылки на все страницы, иначе end_size и mid_size будут проигнорированны
 			'end_size'     => 15, //  сколько страниц показать в начале и конце списка (12 ... 4 ... 89)
@@ -454,6 +454,7 @@ function update_my_custom_type() {
 		$wp_post_types['seminar']->exclude_from_search = true;
 		$wp_post_types['reviews']->exclude_from_search = true;
 		$wp_post_types['trainer']->exclude_from_search = true;
+		$wp_post_types['banner']->exclude_from_search = true;
 	}
 }
 

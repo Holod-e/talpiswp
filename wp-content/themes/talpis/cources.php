@@ -120,7 +120,7 @@ get_header(); // подключаем header.php ?>
 				<div class="col-md-5">
 					<aside>
 						<?php get_template_part('partials/banner'); ?>
-						<div class="widget-postandvideo2"></div>
+						<?php get_template_part('partials/widget-postandvideo'); ?>
 					</aside>
 				</div>
 			</div>

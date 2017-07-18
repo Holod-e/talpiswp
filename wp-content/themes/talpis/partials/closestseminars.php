@@ -3,50 +3,15 @@
 	<div class="container">
 		<h2 class="sec-title">Ближайшие семинары</h2>
 		<div class="seminars">
-			<div class="seminar">
-				<div class="seminar-photo"></div>
-				<div class="seminar-info">
-					<p class="seminar-name">Семинар
-						<span>«Точка сборки»</span>
-					</p>
-					<p class="seminar-txt">Новейшие инструменты работы с психикой сейчас находятся на …</p>
-					<span class="date">14 Апреля</span>
-					<a class="more">Подробнее</a>
-				</div>
-			</div>
-			<div class="seminar">
-				<div class="seminar-photo"></div>
-				<div class="seminar-info">
-					<p class="seminar-name">Семинар
-						<span>«Точка сборки»</span>
-					</p>
-					<p class="seminar-txt">Новейшие инструменты работы с психикой сейчас находятся на …</p>
-					<span class="date">14 Апреля</span>
-					<a class="more">Подробнее</a>
-				</div>
-			</div>
-			<div class="seminar">
-				<div class="seminar-photo"></div>
-				<div class="seminar-info">
-					<p class="seminar-name">Семинар
-						<span>«Точка сборки»</span>
-					</p>
-					<p class="seminar-txt">Новейшие инструменты работы с психикой сейчас находятся на …</p>
-					<span class="date">14 Апреля</span>
-					<a class="more">Подробнее</a>
-				</div>
-			</div>
-			<div class="seminar">
-				<div class="seminar-photo"></div>
-				<div class="seminar-info">
-					<p class="seminar-name">Семинар
-						<span>«Точка сборки»</span>
-					</p>
-					<p class="seminar-txt">Новейшие инструменты работы с психикой сейчас находятся на …</p>
-					<span class="date">14 Апреля</span>
-					<a class="more">Подробнее </a>
-				</div>
-			</div>
+			<?php
+				$args = array(
+					'post_type'  => 'seminar'
+					);
+				$loop = new WP_Query( $args );
+					if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<?php get_template_part('loop-closestseminar');?>
+				<?php endwhile; ?>
+				<?php endif; ?>
 		</div>
 	</div>
 </section>
