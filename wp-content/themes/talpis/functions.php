@@ -455,6 +455,7 @@ function update_my_custom_type() {
 		$wp_post_types['reviews']->exclude_from_search = true;
 		$wp_post_types['trainer']->exclude_from_search = true;
 		$wp_post_types['banner']->exclude_from_search = true;
+		$wp_post_types['answer']->exclude_from_search = true;
 	}
 }
 

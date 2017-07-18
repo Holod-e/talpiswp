@@ -33,34 +33,37 @@ get_header(); // подключаем header.php ?>
 	<!-- SECTION 2-->
 	<section class="contacts-sec2">
 		<div class="container">
-			<div class="questions-block">
-				<h2 class="sec-title">Вопросы и ответы</h2>
-				<div class="question">
-					<p class="question-text">Какой курс выбрать?</p>
-					<p class="answer-text">Все зависит от вашей психологической подготовки, желаний и потребностей при обучении. Если вы новичок, то вам 	начать с обучения Метафорическим Ассоциативным Картам</p>
+			<div class="row">
+
+				<div class="questions-block col-md-6">
+					<h2 class="sec-title">Вопросы и ответы</h2>
+						<?php $loop = new WP_Query( array(
+							'post_type' => 'answer',
+							'publish' => true,
+							'paged' => get_query_var('paged'),
+							'posts_per_page' => 3
+						));
+							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<div id="answer-<?php the_ID(); ?>" <?php post_class('question'); ?>>
+								<p class="question-text"><?php the_field( "question" ); ?></p>
+								<p class="answer-text"><?php the_field( "answer" ); ?></p>
+							</div>
+							<?php endwhile; ?>
+							<?php endif; ?>
+							<?php pagination(); ?>
 				</div>
-				<div class="question">
-					<p class="question-text">Как оплатить тренинг?</p>
-					<p class="answer-text">Оплатить тренинг вы можете с помощью кредитной карты, а также платежных систем Яндекс. Деньги и QIWI. При … 	следует учесть, что на Вас ложится процентная ставка по оплате, в зависимости</p>
+				<div class=" form-block col-md-6">
+					<h2 class="sec-title">Задать вопрос</h2>
+					<form>
+						<label>Электронная почта</label>
+						<input type="text" name="email" placeholder="Введите Ваш e-mail адрес" class="email">
+						<label>Имя</label>
+						<input type="text" name="name" placeholder="Введите Ваше имя" class="name">
+						<label>Cообщение</label>
+						<textarea class="message"></textarea>
+						<input type="submit" value="Отправить" class="btn btn-send">
+					</form>
 				</div>
-				<div class="question">
-					<p class="question-text">Можно ли вернуть деньги за тренинг или
-						<br> перенести его на другое время?</p>
-					<p class="answer-text">В случае отказа от участия по уважительным причинам, Вы …</p>
-				</div>
-				<div class="answers-nav"></div>
-			</div>
-			<div class="form-block">
-				<h2 class="sec-title">Задать вопрос</h2>
-				<form>
-					<label>Электронная почта</label>
-					<input type="text" name="email" placeholder="Введите Ваш e-mail адрес" class="email">
-					<label>Имя</label>
-					<input type="text" name="name" placeholder="Введите Ваше имя" class="name">
-					<label>Cообщение</label>
-					<textarea class="message"></textarea>
-					<input type="submit" value="Отправить" class="btn btn-send">
-				</form>
 			</div>
 		</div>
 	</section>

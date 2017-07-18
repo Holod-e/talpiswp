@@ -71,10 +71,12 @@ get_header(); // подключаем header.php ?>
 <section class="home-sec3">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-7 left-block">
+			<div class=" col-md-7 col-sm-12 left-block">
 				<h2 class="sec-title">Превращая жизнь в результате мы теряем саму жизнь</h2>
 				<p class="sec-subtitle">Из интервью с Леонидом Тальписом</p>
-				<div class="video"></div>
+				<div class="video">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/huFLHcZw1XQ?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
 				<p class="text">На мой взгляд, психотерапевт похож на экскурсовода.
 					<br> Его основная задача – сделать так, чтобы у человека появился выбор,
 					<br> и ровно там, где у человека выбор появляется,
@@ -84,7 +86,7 @@ get_header(); // подключаем header.php ?>
 					<a href="/articles-and-videos/" class="all-video">Смотреть все видео ></a>
 				</div>
 			</div>
-			<div class="col-md-5 right-block">
+			<div class="col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0 right-block">
 				<?php get_template_part('partials/widget-rewiews'); ?>
 				<?php get_template_part('partials/banner');?>
 			</div>
@@ -94,13 +96,17 @@ get_header(); // подключаем header.php ?>
 <!-- SECTION 4-->
 <section class="home-sec4">
 	<div class="container">
-		<div class="talpis-photo"></div>
-		<div class="talpis-info">
-			<h2 class="sec-title">Автор уникальной методики
-				<br> Леонид Тальпис</h2>
-			<p class="talpis-text">Леонид Тальпис – практикующий психолог, потомственный врач, автор уникальной терапевтической методики под названием «ВсеЛенская терапия» и ряда дополнений к популярным психологическим направлениям, официальный представитель метафорических карт
-				OH-CARDS в России, тренер международного уровня.</p>
-			<a href="/about-author/" class="more-about btn">ПОДРОБНЕЕ ОБ АВТОРЕ</a>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 ">
+				<div class="talpis-photo"></div>
+			</div>
+			<div class="talpis-info col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-8">
+				<h2 class="sec-title">Автор уникальной методики
+					<br> Леонид Тальпис</h2>
+				<p class="talpis-text">Леонид Тальпис – практикующий психолог, потомственный врач, автор уникальной терапевтической методики под названием «ВсеЛенская терапия» и ряда дополнений к популярным психологическим направлениям, официальный представитель метафорических карт
+					OH-CARDS в России, тренер международного уровня.</p>
+				<a href="/about-author/" class="more-about btn">ПОДРОБНЕЕ ОБ АВТОРЕ</a>
+			</div>
 		</div>
 		<?php get_template_part('partials/banner2');?>
 	</div>
