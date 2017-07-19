@@ -11,12 +11,12 @@ get_header(); // подключаем header.php ?>
 	<section class="author-sec1">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-xs-12 col-md-8">
 					<h1 class="author-title">Жизнь - это большая
 						<br> космическая игра</h1>
 					<p class="subtitle">Вопрос только в том, у кого джойстик</p>
 				</div>
-				<aside class="col-md-4">
+				<aside class="col-xs-12 col-md-4">
 					<div class="widget-consultation">
 						<p class="widget-title">Личная консультация</p>
 						<p class="widget-text">Вернём управление Вашей жизнью
@@ -32,7 +32,7 @@ get_header(); // подключаем header.php ?>
 	<section class="author-sec2">
 		<div class="container">
 			<div class="row">
-				<article class="col-md-8">
+				<article class="col-xs-12  col-md-offset-1 col-md-10 col-lg-offset-0 col-lg-8">
 						<h2 class="sec-title">Я помогаю другим людям
 							<br> понять самих себя</h2>
 						<p class="sec-subtitle">За счёт того, что понял себя, насколько это возможно</p>
@@ -92,7 +92,7 @@ get_header(); // подключаем header.php ?>
 							<br> Это большая космическая игра.
 							<br> Берите джойстик и – к свершениям! </p>
 					</article>
-				<aside class="col-md-4">
+				<aside class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-0 col-lg-4">
 					<!-- <div class="widget-postandvideo"> -->
 						<?php get_template_part('partials/widget-postandvideo'); ?>
 					<!-- </div> -->

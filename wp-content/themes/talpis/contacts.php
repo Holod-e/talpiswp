@@ -70,12 +70,18 @@ get_header(); // подключаем header.php ?>
 	<!-- SECTION 3-->
 	<section class="contacts-sec3">
 		<div class="container">
-			<div class="block-image"></div>
-			<div class="block-info">
-				<h2 class="sec-title">Информация
-					<br> для организаторов</h2>
-				<p class="txt">Если вы хотите стать членом нашей региональной сети организаторов тренингов в мире и хотите провести выездные тренинги 	и семинары Леонида Тальписа в своем городе – свяжитесь с нами по кнопке ниже.</p>
-				<a class="btn">Связаться с нами</a>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="block-image"></div>
+				</div>
+				<div class="col-sm-6 col-md-8">
+					<div class="block-info">
+						<h2 class="sec-title">Информация
+							<br> для организаторов</h2>
+						<p class="txt">Если вы хотите стать членом нашей региональной сети организаторов тренингов в мире и хотите провести выездные тренинги 	и семинары Леонида Тальписа в своем городе – свяжитесь с нами по кнопке ниже.</p>
+						<a class="btn">Связаться с нами</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
