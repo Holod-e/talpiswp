@@ -3,6 +3,24 @@ jQuery(document).ready(function() {
     dots: true
   });
 
+  jQuery('.awards-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+      responsive: [
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }
+      ]
+  });
+
+
   jQuery('form.filter select.seminar-place').on('change', function(event) {
     event.preventDefault();
     var seminarPlace = jQuery( ".seminar-place option:selected").val();
