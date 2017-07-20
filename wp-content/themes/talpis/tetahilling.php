@@ -13,7 +13,7 @@ get_header(); // подключаем header.php ?>
 	<h1 class="course-title">Тета-Хилинг</h1>
 	<p class="course-subtitle">Методика преподавания классического тета-хилинга
 		<br> с авторскими дополнениями</p>
-	<a href="#" class="btn btn-bron">Забронировать</a>
+	<a href="#" class="btn  btn-red btn-bron">Забронировать</a>
 	<a href="#" class="btn btn-more">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->

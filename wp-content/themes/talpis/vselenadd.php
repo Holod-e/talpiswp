@@ -14,7 +14,7 @@ get_header(); // подключаем header.php ?>
 		<br> Дополнения</h1>
 	<p class="course-subtitle">Дальнейшее погружение в методику Леонида Тальписа
 		<br> через расширение и углубление круга решаемых вопросов</p>
-	<a href="#" class="btn btn-bron">Забронировать</a>
+	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
 	<a href="#" class="btn btn-more">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->

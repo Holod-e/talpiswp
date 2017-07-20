@@ -1,8 +1,8 @@
 <!-- SECTION TALPIS BIO-->
 <section class="talpis-bio-sec">
 	<div class="container">
-		<div class="col-xs-12  col-md-pull-7 col-md-5 talpis-photo"></div>
-		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-7 col-md-pull-5 talpis-bio">
+		<div class="col-xs-12  col-md-push-7 col-md-5 talpis-photo"></div>
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-0 col-md-pull-5 talpis-bio">
 			<h2 class="sec-title">Тальпис Леонид Борисович</h2>
 			<p class="talpis-info">Практикующий психолог и потомственный врач, имеющий два высших образования: Медицина и Психология</p>
 			<p class="text">

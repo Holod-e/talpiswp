@@ -9,12 +9,13 @@ get_header(); // подключаем header.php ?>
 
 <!-- SECTION 1-->
 <section class="course-sec1 vsel-sec1">
-	<div class="container"></div>
-	<h1 class="course-title">ВсеЛенская Терапия</h1>
-	<p class="course-subtitle">Авторская методика Леонида Тальписа для тех, кто устал от многочисленных методов психотерапии,
-		<br> требующих длительного изучения и кому надоело лечить и лечится</p>
-	<a href="#" class="btn btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<div class="container">
+		<h1 class="course-title">ВсеЛенская Терапия</h1>
+		<p class="course-subtitle">Авторская методика Леонида Тальписа для тех, кто устал от многочисленных методов психотерапии,
+			<br> требующих длительного изучения и кому надоело лечить и лечится</p>
+		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
+		<a href="#" class="btn btn-more">Узнать подробней</a>
+	</div>
 </section>
 <!-- SECTION 2-->
 <section class="course-sec2 vsel-sec2">

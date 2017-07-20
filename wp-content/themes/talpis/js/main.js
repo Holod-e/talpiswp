@@ -1,7 +1,16 @@
 jQuery(document).ready(function() {
 	jQuery('.review-slider').slick({
-    dots: true
+    dots: true,
+    infinite: false
   });
+
+  jQuery('.widget-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    rows: 2
+  })
 
   jQuery('.awards-slider').slick({
     slidesToShow: 3,

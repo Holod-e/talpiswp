@@ -12,7 +12,7 @@ get_header(); // подключаем header.php ?>
 	<h1 class="course-title">Тренерский курс</h1>
 	<p class="course-subtitle">Курс предназначен для профессионалов,
 		<br> желающих преподавать метафорические карты с элементами ВсеЛенской терапии</p>
-	<a href="#" class="btn btn-bron">Забронировать</a>
+	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
 	<a href="#" class="btn btn-more">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->

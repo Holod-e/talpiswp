@@ -13,8 +13,8 @@ get_header(); // подключаем header.php ?>
 	<h1 class="course-title">Точка Сборки</h1>
 	<p class="course-subtitle">Эффективная техника по квантовой психологии, доступная как профессионалам,
 		<br> так и все желающим</p>
-	<a href="#" class="btn btn-red">Забронировать</a>
-	<a href="#" class="btn">Узнать подробней</a>
+	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
+	<a href="#" class="btn btn-more">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->
 <section class="course-sec2 ts-sec2">
@@ -128,7 +128,7 @@ get_header(); // подключаем header.php ?>
 					<span class="radio checked">Нет</span>
 					<span class="radio">Да</span>
 				</div>
-				<a href="#modal-tsPrice" class="seminar-price">Стоимость семинара</a>
+				<a href="#modal-tsPrice" class="seminar-price">Стоимость семинара </a>
 				<input type="submit" value="Забронировать место" class="btn met-subm">
 			</form>
 		</div>

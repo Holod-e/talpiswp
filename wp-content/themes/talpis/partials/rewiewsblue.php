@@ -16,7 +16,5 @@
       <?php endwhile; // конец цикла
       else: echo '<p>Нет записей.</p>'; endif; // если записей нет, напишим "простите" ?>
     </div>
-    <!-- <div class="slider-nav"></div> -->
-     <?php //pagination(); // пагинация, функция нах-ся в function.php ?>
   </div>
 </section>

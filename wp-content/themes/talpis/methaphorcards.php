@@ -12,7 +12,7 @@ get_header(); // подключаем header.php ?>
 	<h1 class="course-title">Метафорические карты</h1>
 	<p class="course-subtitle">Простой и быстрый способ лично познакомиться с методикой
 		<br> и попробовать ее на себе</p>
-	<a href="#" class="btn btn-bron">Забронировать</a>
+	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
 	<a href="#" class="btn btn-more">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->
@@ -76,7 +76,7 @@ get_header(); // подключаем header.php ?>
 		<p class="cart-txt2">Позволяет моделировать любые процессы в прошлом, настоящем , будущем
 			<br> и находить с помощью карт Метеорических карт
 			<br> решение актуальных вопросов</p>
-		<a href="#" class="btn btn-details">Узнать детали</a>
+		<a href="#" class="btn btn-red btn-details">Узнать детали</a>
 	</div>
 </section>
 <!-- SECTION 4-->
@@ -86,7 +86,7 @@ get_header(); // подключаем header.php ?>
 			<h2 class="sec-title">Хотите больше успеха,
 				<br> любви, денег?</h2>
 			<p class="sec-text">ОН-карты существенно расширяют терапевтический арсенал психолога или психотерапевта, при этом методика работы доступна для людей не имеющих психологического образования</p>
-			<a class="btn">Забронировать место</a>
+			<a href="#" class="btn btn-red">Забронировать место</a>
 		</div>
 		<div class="right-block">
 			<p class="item it1">Без использования сложных
