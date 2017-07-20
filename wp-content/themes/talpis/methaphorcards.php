@@ -7,7 +7,7 @@
  */
 get_header(); // подключаем header.php ?>
 <!-- SECTION 1-->
-<section class="course-sec1">
+<section class="course-sec1 met-sec1">
 	<div class="container"></div>
 	<h1 class="course-title">Метафорические карты</h1>
 	<p class="course-subtitle">Простой и быстрый способ лично познакомиться с методикой

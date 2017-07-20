@@ -1,3 +1,25 @@
+<div class="mob-menu modal-overlay" >
+	<div class="modal-content">
+		<div class="close-button close-mob-menu">
+				<div class="one"></div>
+				<div class="two"></div>
+		</div>
+		<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
+			'theme_location' => 'mobile', // идентификатор меню, определен в register_nav_menus() в functions.php
+			'container'=> false, // обертка списка, тут не нужна
+			'menu_id' => 'mobile-nav', // id для ul
+			'items_wrap' => '<nav id="%1$s" class="mobile-menu navbar-nav %2$s">%3$s</ul>',
+			'menu_class' => 'mobile-menu' // класс для ul, первые 2 обязательны
+			);
+			wp_nav_menu($args); // выводим верхнее меню
+		?>
+	</div>
+</div>
+
+
+
+
+
 <!-- MODALS-->
 <div id="modal-video" class="modal-overlay">
 	<div class="modal-content">

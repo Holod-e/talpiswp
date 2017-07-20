@@ -111,6 +111,21 @@ jQuery('.form-control').on('focusout', function() {
   jQuery('#searchform').removeClass('active');
 });
 
+jQuery('.close-mob-menu').on('click', function (e) {
+  jQuery('.mob-menu').fadeOut();
+});
+
+jQuery('#menu-item-138 a').on('click', function(e) {
+  e.preventDefault();
+  jQuery(this).toggleClass('active');
+  jQuery('.mob-menu .sub-menu').slideToggle();
+});
+
+jQuery('.mob-menu-icon').on('click', function(e) {
+  e.preventDefault();
+  jQuery('.mob-menu').fadeIn();
+})
+
 
 
 

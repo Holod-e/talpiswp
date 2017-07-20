@@ -9,7 +9,8 @@ add_theme_support('title-tag'); // теперь тайтл управляетс�
 
 register_nav_menus(array( // Регистрируем 2 меню
 	'top' => 'Верхнее', // Верхнее
-	'bottom' => 'Внизу' // Внизу
+	'bottom' => 'Внизу',
+	'mobile' => 'Мобильное'
 ));
 
 add_theme_support('post-thumbnails'); // включаем поддержку миниатюр
@@ -404,6 +405,7 @@ function dimox_breadcrumbs() {
 } // end of dimox_breadcrumbs()
 
 add_image_size( 'post-normalsize', 260, 294, true );
+add_image_size( 'post-obrezsize', 280, 120, true );
 
 function new_excerpt_length($length) {
 	return 15;

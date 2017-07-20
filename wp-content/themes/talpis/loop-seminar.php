@@ -33,7 +33,7 @@
 				<p class="start-date">Старт: <br>
 					<span><?php the_field('seminar-start-date'); ?></span>
 				</p>
-				<p class="start-date">Окончание: <br>
+				<p class="start-date finish-date">Окончание: <br>
 					<span><?php the_field('seminar-finish-date'); ?></span>
 				</p>
 			</div>
