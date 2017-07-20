@@ -115,7 +115,7 @@ jQuery('.close-mob-menu').on('click', function (e) {
   jQuery('.mob-menu').fadeOut();
 });
 
-jQuery('#menu-item-138 a').on('click', function(e) {
+jQuery('#menu-item-138 > a').on('click', function(e) {
   e.preventDefault();
   jQuery(this).toggleClass('active');
   jQuery('.mob-menu .sub-menu').slideToggle();
