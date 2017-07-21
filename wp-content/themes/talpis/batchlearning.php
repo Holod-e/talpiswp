@@ -8,12 +8,13 @@
 get_header(); // подключаем header.php ?>
 <!-- SECTION 1-->
 <section class="course-sec1 batch-sec1">
-	<div class="container"></div>
-	<h1 class="course-title">Пакетное обучение</h1>
-	<p class="course-subtitle">Пройдите программу из 7-ми семинаров с самыми прогрессивными психологическими техниками,
-		<br> и начните, наконец, жить на полную!</p>
-	<a href="#" class="btn btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<div class="container">
+		<h1 class="course-title">Пакетное обучение</h1>
+		<p class="course-subtitle">Пройдите программу из 7-ми семинаров с самыми прогрессивными психологическими техниками,
+			<br> и начните, наконец, жить на полную!</p>
+		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
+		<a href="#" class="btn btn-more">Узнать подробней</a>
+	</div>
 </section>
 <!-- SECTION 2-->
 <section class="course-sec2 batch-sec2">
@@ -72,11 +73,11 @@ get_header(); // подключаем header.php ?>
 <section class="trainer-sec4 batch-sec4">
 	<div class="container">
 		<div class="items">
-			<p class="item">
+			<p class="col-xs-12 col-sm-4 item">
 				<span>У Вас будет 730 дней</span> Из которых Вы сможете выбрать тренинги с удобными для Вас датами, большинство семинаров проходят два раза в год.</p>
-			<p class="item">
+			<p class="col-xs-12 col-sm-4 item">
 				<span>На протяжении двух лет</span> Вас будут информировать о времени и месте проведения тренингов и семинаров.</p>
-			<p class="item">
+			<p class="col-xs-12 col-sm-4 item">
 				<span>Возможно повторное посещение семинаров</span> С 30% скидкой и преимущественное право посещения семинаров групповой терапии и групп поддержки между семинарами за отдельную плату. </p>
 		</div>
 	</div>

@@ -9,12 +9,13 @@ get_header(); // подключаем header.php ?>
 
 <!-- SECTION 1-->
 <section class="course-sec1 teta-sec1">
-	<div class="container"></div>
-	<h1 class="course-title">Тета-Хилинг</h1>
-	<p class="course-subtitle">Методика преподавания классического тета-хилинга
-		<br> с авторскими дополнениями</p>
-	<a href="#" class="btn  btn-red btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<div class="container">
+		<h1 class="course-title">Тета-Хилинг</h1>
+		<p class="course-subtitle">Методика преподавания классического тета-хилинга
+			<br> с авторскими дополнениями</p>
+		<a href="#" class="btn  btn-red btn-bron">Забронировать</a>
+		<a href="#" class="btn btn-more">Узнать подробней</a>
+	</div>
 </section>
 <!-- SECTION 2-->
 <section class="course-sec2 teta-sec2">

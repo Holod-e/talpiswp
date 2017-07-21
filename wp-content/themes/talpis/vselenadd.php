@@ -9,13 +9,14 @@ get_header(); // подключаем header.php ?>
 
 <!-- SECTION 1-->
 <section class="course-sec1 vseladd-sec1">
-	<div class="container"></div>
-	<h1 class="course-title">ВсеЛенская Терапия.
-		<br> Дополнения</h1>
-	<p class="course-subtitle">Дальнейшее погружение в методику Леонида Тальписа
-		<br> через расширение и углубление круга решаемых вопросов</p>
-	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<div class="container">
+		<h1 class="course-title">ВсеЛенская Терапия.
+			<br> Дополнения</h1>
+		<p class="course-subtitle">Дальнейшее погружение в методику Леонида Тальписа
+			<br> через расширение и углубление круга решаемых вопросов</p>
+		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
+		<a href="#" class="btn btn-more">Узнать подробней</a>
+	</div>
 </section>
 <!-- SECTION 2-->
 <section class="course-sec2 vseladd-sec2">
@@ -141,12 +142,14 @@ get_header(); // подключаем header.php ?>
 			<br> с такими темами, как:</h2>
 		<div class="themes">
 			<p class="theme theme1">Любовь и Свобода</p>
-			<p class="theme theme2">Время и Бог</p>
+			<p class="theme theme5">Власть и Ответственность</p>
 			<p class="theme theme3">Жизнь
 				<br> и Смерть</p>
+			<p class="theme theme2">Время и Бог</p>
+			
 			<p class="theme theme4">Достоинство
 				<br> и Этика</p>
-			<p class="theme theme5">Власть и Ответственность</p>
+			
 		</div>
 		<h2 class="sec-title st2">Этим самым раскрывая неповторимую глубину метода
 			<br> и расширяет возможности для поиска индивидуального подхода для Вас
@@ -159,7 +162,8 @@ get_header(); // подключаем header.php ?>
 <!-- SECTION 6-->
 <section class="vseladd-sec6">
 	<div class="container">
-		<div class="left-block">
+		<div class="image-block col-xs-12 col-sm-push-7 col-sm-5"></div>
+		<div class=" col-xs-12 col-sm-7 col-sm-pull-5 left-block">
 			<h2 class="sec-title">ВсеЛенская терапия.
 				<br> Дополнения – для Вас,
 				<br> если Вы:</h2>
@@ -171,7 +175,7 @@ get_header(); // подключаем header.php ?>
 				<a class="btn btn-red">Забронировать</a>
 			</ul>
 		</div>
-		<div class="image-block"></div>
+		
 	</div>
 </section>
 <!-- SECTION SERTEFICATE-BLUE-->

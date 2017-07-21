@@ -8,12 +8,13 @@
 get_header(); // подключаем header.php ?>
 <!-- SECTION 1-->
 <section class="course-sec1 trainer-sec1">
-	<div class="container"></div>
-	<h1 class="course-title">Тренерский курс</h1>
-	<p class="course-subtitle">Курс предназначен для профессионалов,
-		<br> желающих преподавать метафорические карты с элементами ВсеЛенской терапии</p>
-	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<div class="container">
+		<h1 class="course-title">Тренерский курс</h1>
+		<p class="course-subtitle">Курс предназначен для профессионалов,
+			<br> желающих преподавать метафорические карты с элементами ВсеЛенской терапии</p>
+		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
+		<a href="#" class="btn btn-more">Узнать подробней</a>
+	</div>
 </section>
 <!-- SECTION 2-->
 <section class="course-sec2 trainer-sec2">
@@ -70,35 +71,54 @@ get_header(); // подключаем header.php ?>
 		<h2 class="sec-title">Курс рекомендован профессионалам
 			<br> с психологическим образованием,
 			<br> которые:</h2>
-		<div class="items">
-			<p class="item">
-				<span>Прошли обучение на базовом семинаре</span> По ВсеЛенской терапии и Дополнениям</p>
-			<p class="item">
-				<span>Обладают достаточной степенью лени</span> Чтобы не тратить время на неэффективные методы и долгие разговоры с клиентом.</p>
-			<p class="item">
-				<span>Искренне влюблены в метод ВсеЛенской терапии</span> Готовы активно развивать его.</p>
+		<div class="row items">
+			<div class="col-xs-12 col-sm-4">
+				<p class="item">
+					<span>Прошли обучение на базовом семинаре</span> По ВсеЛенской терапии и Дополнениям</p>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<p class="item">
+					<span>Обладают достаточной степенью лени</span> Чтобы не тратить время на неэффективные методы и долгие разговоры с клиентом.</p>
+
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<p class="item">
+					<span>Искренне влюблены в метод ВсеЛенской терапии</span> Готовы активно развивать его.</p>
+			</div>
 		</div>
-		<div class="items">
+
+		<div class="row items">
+			<div class="col-xs-12 col-sm-4">
+				<p class="item">
+								<span>Находятся в хорошем контакте</span> Со своей чувствительность, ясностью и чем-то Большим.</p>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<p class="item">
+					<span>Обладают достаточной степенью осознанности</span> Чтобы не «причинять добро», а увеличить степень свободы клиента и расширить возможности его выборов.</p>
+			</div>
+			<div class="col-xs-12 col-sm-4">
 			<p class="item">
-				<span>Находятся в хорошем контакте</span> Со своей чувствительность, ясностью и чем-то Большим.</p>
-			<p class="item">
-				<span>Обладают достаточной степенью осознанности</span> Чтобы не «причинять добро», а увеличить степень свободы клиента и расширить возможности его выборов.</p>
-			<p class="item">
-				<span>Знают, что такое «Поле Любви»</span> Умеют находиться в мета-позиции во время работы с клиентом.</p>
+							<span>Знают, что такое «Поле Любви»</span> Умеют находиться в мета-позиции во время работы с клиентом.</p>
+			</div>
 		</div>
-		<div class="items">
+
+		<div class="row items">
+			<div class="col-xs-12 col-sm-4">
 			<p class="item">
-				<span>Никогда не перестают учиться</span> И развиваться в своей практике.</p>
-			<p class="item">
-				<span>Чувствуют внутреннюю готовность отдавать</span> Делиться знаниями, и делать это с юмором и легкостью.</p>
-			<p class="item lst"></p>
+							<span>Никогда не перестают учиться</span> И развиваться в своей практике.</p>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<p class="item">
+								<span>Чувствуют внутреннюю готовность отдавать</span> Делиться знаниями, и делать это с юмором и легкостью.</p>
+			</div>
 		</div>
 	</div>
 </section>
 <!-- SECTION 5-->
 <section class="trainer-sec5">
 	<div class="container">
-		<div class="left-block">
+		<div class="image-block col-xs-12 col-sm-5 col-sm-push-7"></div>
+		<div class="left-block col-sm-7 col-sm-pull-5">
 			<h2 class="sec-title">Прохождение
 				<br> тренерского курса дает право: </h2>
 			<ul>
@@ -112,7 +132,7 @@ get_header(); // подключаем header.php ?>
 				<li>Быть представленным в разделе «Партнерские семинары» данного сайта. </li>
 			</ul>
 		</div>
-		<div class="image-block"></div>
+		
 	</div>
 </section>
 <!-- SECTION 6-->
