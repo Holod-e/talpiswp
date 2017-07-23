@@ -55,7 +55,8 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<div class="element el5">
 				<div class="element-icon"></div>
-				<p class="element-title">Личностный рост</p>
+				<p class="element-title">Личностный <br>
+				рост</p>
 				<p class="element-text">Самопознание,
 					<br> отношения с самим собой
 					<br> и окружающим миром, творчество и профессиональное развитие. </p>

@@ -69,15 +69,15 @@ get_header(); // подключаем header.php ?>
 <!-- SECTION ADDITIONS-->
 <section class="vseladd-additions">
 	<div class="addition add1">
-		<h2 class="sec-title">Долнение 1</h2>
+		<h2 class="sec-title">Дополнение 1</h2>
 		<a data-target="add1" class="btn-more">Подробнее</a>
 	</div>
 	<div class="addition add2">
-		<h2 class="sec-title">Долнение 2</h2>
+		<h2 class="sec-title">Дополнение 2</h2>
 		<a data-target="add2" class="btn-more">Подробнее</a>
 	</div>
 	<div class="addition add3">
-		<h2 class="sec-title">Долнение 3</h2>
+		<h2 class="sec-title">Дополнение 3</h2>
 		<a data-target="add3" class="btn-more">Подробнее</a>
 	</div>
 	<div class="switch seminar-plan hidden-add1">
