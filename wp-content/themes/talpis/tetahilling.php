@@ -205,7 +205,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 <!-- SECTION 8-->
-<section class="met-sec8 teta-sec8">
+<section class="course-formblock met-sec8 teta-sec8">
 	<div class="container">
 		<div class="form-block">
 			<form>
