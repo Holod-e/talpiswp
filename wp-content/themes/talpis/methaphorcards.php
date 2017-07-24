@@ -172,7 +172,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 <?php get_template_part('partials/closestseminars'); ?>
-<?php get_template_part('partials/partials/videorewiews'); ?>
+<?php get_template_part('partials/videorewiews'); ?>
 <?php get_template_part('partials/secbio'); ?>
 <?php get_template_part('partials/teraphy'); ?>
 <?php get_template_part('partials/sertificate'); ?>

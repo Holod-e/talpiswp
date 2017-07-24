@@ -36,10 +36,10 @@ get_header(); // подключаем header.php ?>
 						<a href="/trainings-and-seminars/course-for-trainers">Тренерский курс</a>
 					</li>
 					<li>
-						<a href="/#/">Личная терапия</a>
+						<a href="#modal-individual-teraphy">Личная терапия</a>
 					</li>
 					<li>
-						<a href="/#/">Груповая терапия</a>
+						<a href="#modal-group-teraphy">Груповая терапия</a>
 					</li>
 					<li>
 						<a href="/#/">Партнерские тренинги и семинары</a>
@@ -89,7 +89,7 @@ get_header(); // подключаем header.php ?>
 						<p class="cource-name">Тренерский курс</p>
 						<p class="cource-info">Только для профессионалов, желающих преподавать ВсеЛенскую терапию </p>
 					</a>
-					<a class="cource c8">
+					<a class="cource c8" href="#modal-group-teraphy">
 						<div class="cource-icon"></div>
 						<p class="cource-name">Групповая терапия</p>
 						<p class="cource-info">Работа с актуальными темами для тех, кто уже прошел обучение методу</p>
