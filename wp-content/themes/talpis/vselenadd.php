@@ -189,7 +189,7 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 </section>
-<?php get_template_part('partials/rewiewswhite'); ?>
+<?php get_template_part('partials/rewiewsvsel'); ?>
 <!-- SECTION 9-->
 <section class="met-sec7 vseladd-sec7">
 	<div class="container">

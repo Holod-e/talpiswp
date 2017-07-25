@@ -106,7 +106,7 @@ get_header(); // подключаем header.php ?>
 			</div>
 		</div>
 	</section>
-	<?php get_template_part('partials/rewiewsblue'); ?>
+	<?php get_template_part('partials/rewiewsaboutauthor'); ?>
 	<!-- SECTION AWARDS-->
 	<section class="sec-awards">
 		<div class="container">

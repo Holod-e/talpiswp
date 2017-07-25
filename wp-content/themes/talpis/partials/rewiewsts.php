@@ -1,5 +1,5 @@
 <!-- SECTION REWIEWS-->
-<section class="sec-reviews">
+<section class="sec-reviews rev-white">
   <div class="container">
     <h2 class="sec-title">Отзывы</h2>
     <div class="review-slider">
@@ -8,7 +8,7 @@
             'post_type' => 'reviews',
             'publish' => true,
             'paged' => get_query_var('paged'),
-            'tag' => 'trainings'
+            'category_name' => 'tochka-sborki'
         );
         query_posts($args);
       if (have_posts()) : while (have_posts()) : the_post(); // если посты есть - запускаем цикл wp ?>
@@ -16,5 +16,6 @@
       <?php endwhile; // конец цикла
       else: echo '<p>Нет записей.</p>'; endif; // если записей нет, напишим "простите" ?>
     </div>
+    <!-- <div class="slider-nav"></div> -->
   </div>
 </section>

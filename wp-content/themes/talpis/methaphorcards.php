@@ -134,7 +134,7 @@ get_header(); // подключаем header.php ?>
 			<br> применимый во всех сферах Вашей жизни </p>
 	</div>
 </section>
-<?php get_template_part('partials/rewiewswhite'); ?>
+<?php get_template_part('partials/rewiewsmetaphor'); ?>
 <!-- SECTION 7-->
 <section class="met-sec7">
 	<div class="container">

@@ -115,9 +115,7 @@ get_header(); // подключаем header.php ?>
 							<br> «Мы все время пытаемся превратить жизнь в достижение результата и из-за этого теряем сам процесс жизни»</p>
 						<p class="text">О том, как найти в себе скрытые возможности для получения личного опыта и разрешения собственных вопросов, а также приобретения практических навыков для работы с клиентами.
 							<br>
-							<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-							laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+						</p>
 					</article>
 				</div>
 				<div class="col-md-5">

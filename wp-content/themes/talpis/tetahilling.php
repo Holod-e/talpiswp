@@ -193,7 +193,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 
-<?php get_template_part('partials/rewiewswhite'); ?>
+<?php get_template_part('partials/rewiewsteta-hilling'); ?>
 
 <!-- SECTION 7-->
 <section class="met-sec7 teta-sec7">

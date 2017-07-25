@@ -19,6 +19,6 @@
 			<span class="comments-number"><?php comments_number( '0', '1', '%' ); ?></span>
 		</div>
 		<?php the_excerpt() ?>
-		<a class="more" href="<?php the_permalink(); ?>">Читать дальше</a>
+		<a class="more" href="<?php the_permalink(); ?>">Читать больше</a>
 	</div>
 </article>

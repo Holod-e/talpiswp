@@ -119,6 +119,47 @@
 		<a class="btn btn-red">Забронировать</a>
 	</div>
 </div>
+
+<!-- MODAL VSELENSKAYA ADD SEMINAR-->
+<div id="modal-vselenskayaaddPrice" class="modal-overlay modal-seminar-price">
+	<div class="modal-content">
+		<div class="close-button">
+			<span class="one"></span>
+			<span class="two"></span>
+		</div>
+		<p class="seminar-name">Семинар ВсеЛенская терапия Дополнения</p>
+		<p class="modal-title">Стоимость семинара</p>
+		<div class="prices-blocks clearfix">
+			<div class="price-block pb1">
+				<p class="price-val">55 000
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span>1 августа</span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb2">
+				<p class="price-val">60 000
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span>1 октября</span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb3">
+				<p class="price-val">65 000
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span>1 октября</span> с учетом предоплаты.</p>
+			</div>
+		</div>
+		<div class="bottom-text">
+			<span>*</span> Для бронирования места на тренинге и фиксации суммы Вашей оплаты
+			<br> необходимо внести предоплату
+			<span class="blue">5 000 рублей</span>
+		</div>
+		<a class="btn btn-red">Забронировать</a>
+	</div>
+</div>
 <!-- MODAL TOCHKA SBORKI SEMINAR-->
 <div id="modal-tsPrice" class="modal-overlay modal-seminar-price">
 	<div class="modal-content">
@@ -176,11 +217,6 @@
 				<input type="text" name="phone" placeholder="Номер телефона" class="phone">
 				<input type="text" name="email" placeholder="Email" class="email">
 				<input type="text" name="country" placeholder=" Город / Страна" class="country">
-				<div class="education-block">
-					<p class="question">Проходили Вы семинар ?</p>
-					<span class="radio checked">Нет</span>
-					<span class="radio">Да</span>
-				</div>
 				<input type="submit" value="ЗАписаться" class="btn met-subm">
 			</form>
 		</div>
@@ -202,12 +238,8 @@
 				<input type="text" name="phone" placeholder="Номер телефона" class="phone">
 				<input type="text" name="email" placeholder="Email" class="email">
 				<input type="text" name="country" placeholder=" Город / Страна" class="country">
-				<div class="education-block">
-					<p class="question">Проходили Вы семинар ?</p>
-					<span class="radio checked">Нет</span>
-					<span class="radio">Да</span>
-				</div>
-				<input type="submit" value="ЗАписаться" class="btn met-subm">
+
+				<input type="submit" value="Записаться" class="btn met-subm">
 			</form>
 		</div>
 	</div>

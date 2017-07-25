@@ -101,7 +101,7 @@ get_header(); // подключаем header.php ?>
 			<br> и сильного себя! </p>
 	</div>
 </section>
-<?php get_template_part('partials/rewiewswhite'); ?>
+<?php get_template_part('partials/rewiewsts'); ?>
 <!-- SECTION 8-->
 <section class="met-sec7 ts-sec8">
 	<div class="container">
