@@ -50,13 +50,13 @@ get_header(); // подключаем header.php ?>
 				<div class="element-icon"></div>
 				<p class="element-title">Отсутствие
 					<br> переживаний</p>
-				<p class="element-text">Минимальный шанс ретравматизации. </p>
+				<p class="element-text">Минимальный шанс ретравматизации </p>
 			</div>
 			<div class="element el5">
 				<div class="element-icon"></div>
 				<p class="element-title">Доступность
 					<br> методики</p>
-				<p class="element-text">Для самостоятельной работы без психологической подготовки. </p>
+				<p class="element-text">Для самостоятельной работы без психологической подготовки </p>
 			</div>
 		</div>
 	</div>

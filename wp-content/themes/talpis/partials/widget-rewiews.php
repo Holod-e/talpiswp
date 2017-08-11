@@ -3,6 +3,7 @@
 	<div class="widget-slider">
 		<?php
 		  $args = array(
+		  		'posts_per_page' => 10,
 		      'post_type' => 'reviews',
 		      'publish' => true,
 		      'paged' => get_query_var('paged')
@@ -18,8 +19,8 @@
 		 		<p class="author-prof"><?php the_field( "author-prof" ); ?></p>
 		 	</div>
 		 	<div class="rewiew-info">
-		 		<p class="rewiew-theme review-category"><?php the_field( "reviewcategory" ); ?></p>
 		 		<p class="rewiew-name"><?php the_title(); ?></p>
+		 		<p class="rewiew-theme review-category"><?php the_field( "reviewcategory" ); ?></p>
 		 		<div class="rewiew-text">
 		 			<?php the_content(); ?>
 		 		</div>

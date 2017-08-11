@@ -88,6 +88,12 @@ jQuery('.teta-courses .btn-more').on('click', function(e) {
   }
 });
 
+jQuery('.seminar-plan .btn-close').on('click', function(e) {
+  jQuery(this).closest('.switch.active').slideUp().removeClass('active');
+  jQuery('.btn-more.active').removeClass('active');
+
+});
+
 jQuery('.vseladd-additions .btn-more').on('click', function(e) {
   if (jQuery(this).hasClass('active')) {
     jQuery('.seminar-plan.active').slideUp().removeClass('active');
@@ -207,6 +213,13 @@ jQuery('a.comment-form-open').on('click', function(e) {
           jQuery("input.phone2").val(getCookie("phone2"));
           jQuery("input.phone3").val(getCookie("phone3"));
       });
+
+
+jQuery('.main-header .sub-menu').hover( function() {
+  jQuery('#menu-item-60 > a').toggleClass('hovered');
+});
+
+
 
 // var modal = new tingle.modal({
 //     footer: false,

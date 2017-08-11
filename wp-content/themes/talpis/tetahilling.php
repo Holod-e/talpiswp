@@ -123,11 +123,11 @@ get_header(); // подключаем header.php ?>
 	<div class="row">
 		<div class="course basic">
 			<h2 class="sec-title">Базовый</h2>
-			<a data-target="basic" class="btn-more">Подробенее</a>
+			<a data-target="basic" class="btn-more">Подробнее</a>
 		</div>
 		<div class="course advanced">
 			<h2 class="sec-title">Продвинутый</h2>
-			<a data-target="advanced" class="btn-more">Подробенее</a>
+			<a data-target="advanced" class="btn-more">Подробнее</a>
 		</div>
 	</div>
 	<div class="switch seminar-plan hidden-basic">
@@ -145,6 +145,7 @@ get_header(); // подключаем header.php ?>
 				<li>Научиться сканировать человеческое тело, определять нарушенные органы и системы и исцелять их. </li>
 			</ul>
 			<a class="btn btn-bron">ЗАБРОНИРОВАТЬ</a>
+			<a class="btn-close"></a>
 		</div>
 	</div>
 	<div class="switch seminar-plan hidden-advanced">
@@ -164,6 +165,7 @@ get_header(); // подключаем header.php ?>
 				<li>Навыкам интуитивного видения и считывании информации. </li>
 			</ul>
 			<a class="btn btn-bron">ЗАБРОНИРОВАТЬ</a>
+			<a class="btn-close"></a>
 		</div>
 	</div>
 </section>
@@ -173,8 +175,8 @@ get_header(); // подключаем header.php ?>
 		<div class="right-block">
 			<h2 class="sec-title">Что вы откроете для себя</h2>
 			<ul>
-				<li>Возможность исцелять себя и окружающих на физическом, эмоциональном и духовном уровнях.</li>
-				<li>Привлечь в свою жизнь идеально подходящего Вам партнера и друзей.</li>
+				<li>Возможность исцелять себя и окружающих на физическом, эмоциональном и духовном уровнях</li>
+				<li>Привлечь в свою жизнь идеально подходящего Вам партнера и друзей</li>
 				<li>Управлять материальными обстоятельствами  своей жизни</li>
 				<li>Изменять убеждения на глубинном и генетическом уровнях</li>
 				<li>Понять задачи Вашей души и полностью трансформировать свою жизнь в соответствии с ее задачами </li>

@@ -62,7 +62,7 @@ get_header(); // подключаем header.php ?>
 			<a  href="/trainings-and-seminars/batch-training" class="course course8">
 				<div class="course-title">Пакетное обучение</div>
 				<div class="course-info"> Экономьте на обучении,
-					<br> пройдя полный пакет в удобное вам время. </div>
+					<br> пройдя полный пакет в удобное вам время </div>
 			</a>
 		</div>
 	</div>

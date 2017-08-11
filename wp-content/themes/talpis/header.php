@@ -28,7 +28,7 @@
 <body <?php body_class(); // все классы для body ?>>
 	<header class="main-header">
 	<a href="#" class="mob-menu-icon"></a>
-		<a class="logo">Talpis.com</a>
+		<a href="/main/" class="logo">Talpis.com</a>
 			<?php get_template_part('searchform'); ?>
 			<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
 				'theme_location' => 'top', // идентификатор меню, определен в register_nav_menus() в functions.php
