@@ -76,35 +76,35 @@ jQuery('.rewiews-block .read-more').on('click', function(e) {
 
 jQuery('.teta-courses .btn-more').on('click', function(e) {
   if (jQuery(this).hasClass('active')) {
-    jQuery('.seminar-plan.active').slideUp().removeClass('active');
+    jQuery('.seminar-plan.active').slideUp('slow').removeClass('active');
     jQuery(this).removeClass('active');
   }
   else {
     jQuery('.teta-courses .btn-more.active').removeClass('active');
     jQuery(this).addClass('active');
     var target=jQuery(this).attr('data-target');
-    jQuery('.seminar-plan.active').slideUp().removeClass('active');
-    jQuery('.hidden-'+target).slideDown().addClass('active');
+    jQuery('.seminar-plan.active').slideUp('slow').removeClass('active');
+    jQuery('.hidden-'+target).slideDown('slow').addClass('active');
   }
 });
 
 jQuery('.seminar-plan .btn-close').on('click', function(e) {
-  jQuery(this).closest('.switch.active').slideUp().removeClass('active');
+  jQuery(this).closest('.switch.active').slideUp('slow').removeClass('active');
   jQuery('.btn-more.active').removeClass('active');
 
 });
 
 jQuery('.vseladd-additions .btn-more').on('click', function(e) {
   if (jQuery(this).hasClass('active')) {
-    jQuery('.seminar-plan.active').slideUp().removeClass('active');
+    jQuery('.seminar-plan.active').slideUp('slow').removeClass('active');
     jQuery(this).removeClass('active');
   }
   else {
     jQuery('.teta-courses .btn-more.active').removeClass('active');
     jQuery(this).addClass('active');
     var target=jQuery(this).attr('data-target');
-    jQuery('.seminar-plan.active').slideUp().removeClass('active');
-    jQuery('.hidden-'+target).slideDown().addClass('active');
+    jQuery('.seminar-plan.active').slideUp('slow').removeClass('active');
+    jQuery('.hidden-'+target).slideDown('slow').addClass('active');
   }
 });
 
