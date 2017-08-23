@@ -12,11 +12,12 @@ get_header(); // подключаем header.php ?>
 		<h1 class="course-title">Пакетное обучение</h1>
 		<p class="course-subtitle">Пройдите программу из 7-ми семинаров с самыми прогрессивными психологическими техниками,
 			<br> и начните, наконец, жить на полную!</p>
-		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-		<a href="#" class="btn btn-more">Узнать подробней</a>
+		<a href="#form-bron" class="btn btn-red btn-bron btn-anchor">Забронировать</a>
+		<a href="#sec2" class="btn btn-more btn-anchor">Узнать подробней</a>
 	</div>
 </section>
 <!-- SECTION 2-->
+<a name="sec2"></a>
 <section class="course-sec2 batch-sec2">
 	<div class="container">
 		<h2 class="sec-title">
@@ -101,6 +102,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 <!-- SECTION 7-->
+<a name="form-bron"></a>
 <section class="batch-sec7 course-formblock">
 	<div class="container">
 		<div class="form-block">

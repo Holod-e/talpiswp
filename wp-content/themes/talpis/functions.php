@@ -117,6 +117,7 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    wp_enqueue_script('jquery','//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js','','',true); // добавляем свой
 	    wp_enqueue_script('popup', get_template_directory_uri().'/js/popup_script.js','','',true); // и popup
 	    wp_enqueue_script('slick', get_template_directory_uri().'/js/slick.min.js','','',true); // slick slider
+	    wp_enqueue_script('anchorScroller', get_template_directory_uri().'/js/AnchorScroller.js','','',true); // slick slider
 	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
 	}
 }

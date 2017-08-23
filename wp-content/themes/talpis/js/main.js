@@ -12,6 +12,13 @@ jQuery(document).ready(function() {
     rows: 2
   })
 
+  jQuery('.author-sec2 .slider2').slick({
+      dots: true,
+      infinite: true,
+      arrows: false
+      // autoplay: true
+  });
+
   jQuery('.awards-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -219,6 +226,11 @@ jQuery('.main-header .sub-menu').hover( function() {
   jQuery('#menu-item-60 > a').toggleClass('hovered');
 });
 
+
+jQuery('.btn-anchor').on('click', function(e) {
+  e.preventDefault();
+  anchorScroller(this, 1500);
+})
 
 
 // var modal = new tingle.modal({

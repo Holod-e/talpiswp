@@ -48,7 +48,17 @@ get_header(); // подключаем header.php ?>
 							<br> Поэтому я либо беру то, что уже есть и встраиваю в свою систему, проводя улучшения и делая это полезным и удобным для системы; либо придумываю что-то принципиально новое, чего до меня не было. Этому и учу.
 							<br>
 							<br> Люблю анекдот на эту тему: «Ученики пришли к учителю и спросили: </p>
-						<div class="slider2"></div>
+						<div class="slider2">
+								<div class="slider-item">
+									<img src="<?php echo get_bloginfo('template_url')?>/img/author-page-image-1.jpg" alt="">
+								</div>
+								<div class="slider-item">
+									<img src="<?php echo get_bloginfo('template_url')?>/img/author-page-image-2.jpg" alt="">
+								</div>
+								<div class="slider-item">
+									<img src="<?php echo get_bloginfo('template_url')?>/img/author-page-image-3.jpg" alt="">
+								</div>
+						</div>
 						<p class="citate">- Учитель, а Ты следуешь своим учителям?
 							<br> - Конечно! – ответил Учитель.
 							<br> - Но мы знаем, что не следуешь, - возразили ученики.
