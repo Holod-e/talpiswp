@@ -12,10 +12,11 @@ get_header(); // подключаем header.php ?>
 	<h1 class="course-title">Метафорические карты</h1>
 	<p class="course-subtitle">Простой и быстрый способ лично познакомиться с методикой
 		<br> и попробовать ее на себе</p>
-	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<a href="#formblock" class="btn btn-red btn-bron btn-anchor">Забронировать</a>
+	<a href="#block2" class="btn btn-more btn-anchor">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->
+<a name="block2"></a>
 <section class="course-sec2 met-sec2">
 	<div class="container">
 		<h2 class="sec-title">Решение вопросов
@@ -145,6 +146,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 <!-- SECTION 8-->
+<a name="formblock"></a>
 <section class="course-formblock met-sec8">
 	<div class="container">
 		<div class="form-block">

@@ -13,11 +13,12 @@ get_header(); // подключаем header.php ?>
 		<h1 class="course-title">Тета-Хилинг</h1>
 		<p class="course-subtitle">Методика преподавания классического тета-хилинга
 			<br> с авторскими дополнениями</p>
-		<a href="#" class="btn  btn-red btn-bron">Забронировать</a>
-		<a href="#" class="btn btn-more">Узнать подробней</a>
+		<a href="#formblock" class="btn  btn-red btn-bron btn-anchor">Забронировать</a>
+		<a href="#block2" class="btn btn-more btn-anchor">Узнать подробней</a>
 	</div>
 </section>
 <!-- SECTION 2-->
+<a name="block2"></a>
 <section class="course-sec2 teta-sec2">
 	<div class="container">
 		<h2 class="sec-title">Жизненные сферы</h2>
@@ -103,7 +104,7 @@ get_header(); // подключаем header.php ?>
 			<br> менять подсознательные программы и установки?</h2>
 		<p class="sec-text">Как в отношении самого себя, так и других?</p>
 		<p class="blue-text">А главное, по окончании тренинга выдается сертификат Тета-целителя института THInK Вианны Стайбл соответствующего уровня.
-			<a class="btn btn-red"> Забронировать место</a>
+			<a href="#formblock" class="btn btn-red btn-anchor"> Забронировать место</a>
 		</p>
 	</div>
 </section>
@@ -241,3 +242,59 @@ get_header(); // подключаем header.php ?>
 <?php get_template_part('partials/teraphy'); ?>
 
 <?php get_footer(); ?>
+
+
+<?php 
+$args = array(
+	'page_id'  => 34
+	);
+$loop = new WP_Query( $args );
+	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<!-- MODAL TETA PHILLING-->
+<div id="modal-tetaPrice" class="modal-overlay modal-seminar-price">
+	<div class="modal-content">
+		<div class="close-button">
+			<span class="one"></span>
+			<span class="two"></span>
+		</div>
+		<p class="seminar-name">Семинар Тета-Хилинг</p>
+		<p class="modal-title">Стоимость семинара</p>
+		<div class="prices-blocks clearfix">
+			<div class="price-block pb1">
+				<p class="price-val"><?php the_field('price1'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span><?php the_field('date1'); ?></span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb2">
+				<p class="price-val"><?php the_field('price2'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span><?php the_field('date1'); ?></span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb3">
+				<p class="price-val"><?php the_field('price3'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span><?php the_field('date1'); ?></span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb4">
+				<p class="price-val"><?php the_field('price4'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до При оплате в день начала семинара </p>
+			</div>
+		</div>
+		<div class="bottom-text">
+			<span>*</span> Для бронирования места на тренинге и фиксации суммы Вашей оплаты
+			<br> необходимо внести предоплату
+			<span class="blue">5 000 рублей</span>
+		</div>
+		<a class="btn btn-red">Забронировать</a>
+	</div>
+</div>
+<?php endwhile; ?>
+<?php endif; ?>

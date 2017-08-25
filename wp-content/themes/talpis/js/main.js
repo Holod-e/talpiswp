@@ -12,6 +12,14 @@ jQuery(document).ready(function() {
     rows: 2
   })
 
+  jQuery('.questions-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    rows: 3
+  })
+
   jQuery('.author-sec2 .slider2').slick({
       dots: true,
       infinite: true,
@@ -35,6 +43,23 @@ jQuery(document).ready(function() {
         }
       ]
   });
+
+  jQuery('#semInfo').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '#semDate'
+  });
+  jQuery('#semDate').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '#semInfo',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+  jQuery('.seminar .seminar-images').slick({});
 
 
   jQuery('form.filter select.seminar-place').on('change', function(event) {

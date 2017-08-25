@@ -14,11 +14,12 @@ get_header(); // подключаем header.php ?>
 			<br> Дополнения</h1>
 		<p class="course-subtitle">Дальнейшее погружение в методику Леонида Тальписа
 			<br> через расширение и углубление круга решаемых вопросов</p>
-		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-		<a href="#" class="btn btn-more">Узнать подробней</a>
+		<a href="#formblock" class="btn btn-red btn-bron btn-anchor">Забронировать</a>
+		<a href="#block2" class="btn btn-more btn-anchor">Узнать подробней</a>
 	</div>
 </section>
 <!-- SECTION 2-->
+<a name="block2"></a>
 <section class="course-sec2 vseladd-sec2">
 	<div class="container">
 		<h2 class="sec-title">Описание методики</h2>
@@ -53,7 +54,7 @@ get_header(); // подключаем header.php ?>
 		<p class="text">Мало кто из терапевтов способен помочь клиенту прожить и интегрировать
 			<br> этот опыт в безопасном для него пространстве,
 			<br> а мы – этому учим!</p>
-		<a href="#" class="btn btn-red">Забронировать</a>
+		<a href="#formblock" class="btn btn-red btn-anchor">Забронировать</a>
 	</div>
 </section>
 <!-- SECTION 4-->
@@ -95,7 +96,7 @@ get_header(); // подключаем header.php ?>
 				<li>Построить собственный терапевтический стиль. </li>
 				<li>Перестать бояться «сложных клиентов» и стать эффективным в работе с ними. </li>
 			</ul>
-			<a class="btn btn-bron">ЗАБРОНИРОВАТЬ</a>
+			<a href="#formblock" class="btn btn-bron btn-anchor">ЗАБРОНИРОВАТЬ</a>
 			<a class="btn-close"></a>
 		</div>
 	</div>
@@ -114,7 +115,7 @@ get_header(); // подключаем header.php ?>
 				<li>Углубиться в методику работу с базовыми дуальностями. </li>
 				<li>Понять собственную Безопасность и найти свою Любовь </li>
 			</ul>
-			<a class="btn btn-bron">ЗАБРОНИРОВАТЬ</a>
+			<a href="#formblock" class="btn btn-bron btn-anchor">ЗАБРОНИРОВАТЬ</a>
 			<a class="btn-close"></a>
 		</div>
 	</div>
@@ -125,7 +126,7 @@ get_header(); // подключаем header.php ?>
 			<p class="title"> План семинара</p>
 			<ul>
 				<li>Понимать Ваши самые большие страхи и страхи Ваших клиентов.</li>
-				<li>Организовать совладение над собой и другими.</li>
+				<li>Совладание с собой и другими.</li>
 				<li>Изменять контексты, которые Вы организовываете себе и другим. </li>
 			</ul>
 			<ul>
@@ -133,7 +134,7 @@ get_header(); // подключаем header.php ?>
 				<li>Научиться выходить за рамки собственного Я и методик работы. </li>
 				<li>Перестать создавать иллюзии вокруг себя и направить свою энергию на достижение поставленных целей. </li>
 			</ul>
-			<a class="btn btn-bron">ЗАБРОНИРОВАТЬ</a>
+			<a href="#formblock" class="btn btn-bron btn-anchor">ЗАБРОНИРОВАТЬ</a>
 			<a class="btn-close"></a>
 		</div>
 	</div>
@@ -176,7 +177,7 @@ get_header(); // подключаем header.php ?>
 				<li>Сделать свою жизнь и жизнь своих клиентов более осознанными. Понять и интегрировать в свою жизнь понятия ВсеЛенской терапии</li>
 				<li>Хотите научится обеспечивать безопасность и экологичность терапии для клиента</li>
 				<li>Понять свое место и оптимизировать свои терапевтические стратегии</li>
-				<a class="btn btn-red">Забронировать</a>
+				<a href="#formblock" class="btn btn-red btn-anchor">Забронировать</a>
 			</ul>
 		</div>
 		
@@ -189,7 +190,7 @@ get_header(); // подключаем header.php ?>
 		<div class="text-block">
 			<p class="text">
 				<span>А главное:</span> По окончании курса вы получите сертификат Общероссийской Профессиональной Психотерапевтической Лиги соответствующего уровня.</p>
-			<a class="btn btn-bron">Забронировать место</a>
+			<a href="#formblock" class="btn btn-bron btn-anchor">Забронировать место</a>
 		</div>
 	</div>
 </section>

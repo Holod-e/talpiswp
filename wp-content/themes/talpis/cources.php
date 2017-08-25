@@ -48,7 +48,9 @@ get_header(); // подключаем header.php ?>
 						<a href="/trainings-and-seminars/batch-training" >Пакетное обучение</a>
 					</li>
 				</ul>
-				<div class="widgets"></div>
+				<div class="widgets">
+					<?php get_template_part('partials/widget-events'); ?>
+				</div>
 			</aside>
 			<article>
 				<div class="cources">

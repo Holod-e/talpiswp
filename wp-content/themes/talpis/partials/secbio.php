@@ -12,7 +12,7 @@
 			<p class="text big">
 				<span>1-й</span> Кто дополнил базовое обучение метафорическими картами авторской методикой</p>
 			<p class="text">
-				<span>20</span> Тис. учеников за годы практики </p>
+				<span>20</span> тыс. учеников за годы практики </p>
 			<a href="/about-author/" class="btn-more-about-author">ПОДРОБНЕЕ ОБ АВТОРЕ</a>
 		</div>
 

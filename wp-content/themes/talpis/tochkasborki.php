@@ -13,10 +13,11 @@ get_header(); // подключаем header.php ?>
 	<h1 class="course-title">Точка Сборки</h1>
 	<p class="course-subtitle">Эффективная техника по квантовой психологии, доступная как профессионалам,
 		<br> так и все желающим</p>
-	<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-	<a href="#" class="btn btn-more">Узнать подробней</a>
+	<a href="#formblock" class="btn btn-red btn-bron btn-anchor">Забронировать</a>
+	<a href="#block2" class="btn btn-more btn-anchor">Узнать подробней</a>
 </section>
 <!-- SECTION 2-->
+<a name="block2"></a>
 <section class="course-sec2 ts-sec2">
 	<div class="container">
 		<h2 class="sec-title">Жизненные сферы</h2>
@@ -54,7 +55,7 @@ get_header(); // подключаем header.php ?>
 		<p class="cart-txt2">Выбрать из бесконечного множества существующих реальностей ту,
 			<br> в которой вы можете встретится с оптимальной версией себя,
 			<br> своей жизни, своего здоровья</p>
-		<a href="#" class="btn btn-red">Забронировать</a>
+		<a href="#formblock" class="btn btn-red btn-anchor">Забронировать</a>
 	</div>
 </section>
 <!-- SECTION 4-->
@@ -113,6 +114,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 <!-- SECTION 10-->
+<a name="formblock"></a>
 <section class="course-formblock ts-sec9">
 	<div class="container">
 		<div class="form-block">
@@ -141,3 +143,55 @@ get_header(); // подключаем header.php ?>
 <?php get_template_part('partials/sertificate'); ?>
 
 <?php get_footer(); ?>
+
+<!-- MODALS -->
+
+<?php 
+$args = array(
+	'page_id'  => 31
+	);
+$loop = new WP_Query( $args );
+	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<!-- MODAL TOCHKA SBORKI SEMINAR-->
+		<div id="modal-tsPrice" class="modal-overlay modal-seminar-price">
+			<div class="modal-content">
+				<div class="close-button">
+					<span class="one"></span>
+					<span class="two"></span>
+				</div>
+				<p class="seminar-name">Семинар Точка Сборки</p>
+				<p class="modal-title">Стоимость семинара</p>
+				<div class="prices-blocks clearfix">
+					<div class="price-block pb1">
+						<p class="price-val"><?php the_field('price1'); ?>
+							<span>руб </span>
+						</p>
+						<p class="price-info">При оплате до
+							<span><?php the_field('date1'); ?></span> с учетом предоплаты.</p>
+					</div>
+					<div class="price-block pb2">
+						<p class="price-val"><?php the_field('price2'); ?>
+							<span>руб </span>
+						</p>
+						<p class="price-info">При оплате до
+							<span><?php the_field('date2'); ?></span> с учетом предоплаты.</p>
+					</div>
+					<div class="price-block pb3">
+						<p class="price-val"><?php the_field('price3'); ?>
+							<span>руб </span>
+						</p>
+						<p class="price-info">При оплате до
+							<span><?php the_field('date3'); ?></span> с учетом предоплаты.</p>
+					</div>
+				</div>
+				<p class="bottom-text">
+					<span>*</span> Количество мест на семинаре ограничено.
+					<br> Посещение семинара возможно только после внесения предоплаты.
+					<br>
+					<br>
+					<span>*</span> При пропуске семинара предоплата не возвращается.</p>
+				<a href="#" class="btn btn-red" >Забронировать</a>
+			</div>
+		</div>
+<?php endwhile; ?>
+<?php endif; ?>

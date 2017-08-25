@@ -37,11 +37,10 @@ get_header(); // подключаем header.php ?>
 
 				<div class="questions-block col-md-6">
 					<h2 class="sec-title">Вопросы и ответы</h2>
+					<div class="questions-slider">
 						<?php $loop = new WP_Query( array(
 							'post_type' => 'answer',
 							'publish' => true,
-							'paged' => get_query_var('paged'),
-							'posts_per_page' => 3
 						));
 							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 							<div id="answer-<?php the_ID(); ?>" <?php post_class('question'); ?>>
@@ -50,7 +49,8 @@ get_header(); // подключаем header.php ?>
 							</div>
 							<?php endwhile; ?>
 							<?php endif; ?>
-							<?php pagination(); ?>
+							<?php //pagination(); ?>
+					</div>
 				</div>
 				<div class=" form-block col-md-6">
 					<h2 class="sec-title">Задать вопрос</h2>

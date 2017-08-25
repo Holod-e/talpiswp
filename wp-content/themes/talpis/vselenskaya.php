@@ -13,11 +13,12 @@ get_header(); // подключаем header.php ?>
 		<h1 class="course-title">ВсеЛенская Терапия</h1>
 		<p class="course-subtitle">Авторская методика Леонида Тальписа для тех, кто устал от многочисленных методов психотерапии,
 			<br> требующих длительного изучения и кому надоело лечить и лечится</p>
-		<a href="#" class="btn btn-red btn-bron">Забронировать</a>
-		<a href="#" class="btn btn-more">Узнать подробней</a>
+		<a href="#formblock" class="btn btn-red btn-bron btn-anchor">Забронировать</a>
+		<a href="#block2" class="btn btn-more btn-anchor">Узнать подробней</a>
 	</div>
 </section>
 <!-- SECTION 2-->
+<a name="block2"></a>
 <section class="course-sec2 vsel-sec2">
 	<div class="container">
 		<h2 class="sec-title">Описание методики</h2>
@@ -67,7 +68,7 @@ get_header(); // подключаем header.php ?>
 		<p class="cart-txt1">Главным достоинством методики</p>
 		<p class="cart-txt2">Является четкая пошаговая структура выявления причин происходящего
 			<br> и понятный и четкий алгоритм решения психологических вопросов</p>
-		<a href="#" class="btn btn-red">Забронировать</a>
+		<a href="#formblock" class="btn btn-red btn-anchor">Забронировать</a>
 	</div>
 </section>
 <!-- SECTION 4-->
@@ -90,7 +91,7 @@ get_header(); // подключаем header.php ?>
 			<li>Психотерапевтам, которые уже изучили множество разных методов, но все еще недовольны результатами своей работы. Здесь вы сможете значительно расширить свой арсенал и понять, почему многие инструменты из вашего арсенала не работают</li>
 			<li>Сможете расширить свой терапевтический арсенал и научится использовать инструменты по новой и с точки зрения ВсеЛенской терапии </li>
 		</ul>
-		<a href="#" class="btn btn-red">Забронировать</a>
+		<a href="#formblock" class="btn btn-red btn-anchor">Забронировать</a>
 	</div>
 </section>
 <!-- SECTION 6-->
@@ -152,7 +153,7 @@ get_header(); // подключаем header.php ?>
 		<div class="text-block">
 			<p class="text">
 				<span>А главное:</span> По окончании курса вы получите сертификат Общероссийской Профессиональной Психотерапевтической Лиги соответствующего уровня.</p>
-			<a class="btn btn-bron">Забронировать место</a>
+			<a href="#formblock" class="btn btn-bron btn-anchor">Забронировать место</a>
 		</div>
 	</div>
 </section>
@@ -168,6 +169,7 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 <!-- SECTION 10-->
+<a name="formblock"></a>
 <section class="vsel-sec10 course-formblock">
 	<div class="container">
 		<div class="form-block">
@@ -202,3 +204,52 @@ get_header(); // подключаем header.php ?>
 <?php get_template_part('partials/secbio'); ?>
 <?php get_template_part('partials/teraphy'); ?>
 <?php get_footer(); ?>
+
+<!-- MODAL VSELENSKAYA SEMINAR-->
+<?php 
+$args = array(
+	'page_id'  => 38
+	);
+$loop = new WP_Query( $args );
+	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<div id="modal-vselenskayaPrice" class="modal-overlay modal-seminar-price">
+	<div class="modal-content">
+		<div class="close-button">
+			<span class="one"></span>
+			<span class="two"></span>
+		</div>
+		<p class="seminar-name">Семинар ВсеЛенская терапия</p>
+		<p class="modal-title">Стоимость семинара</p>
+		<div class="prices-blocks clearfix">
+			<div class="price-block pb1">
+				<p class="price-val"><?php the_field('price1'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span><?php the_field('date1'); ?></span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb2">
+				<p class="price-val"><?php the_field('price2'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span><?php the_field('date2'); ?></span> с учетом предоплаты.</p>
+			</div>
+			<div class="price-block pb3">
+				<p class="price-val"><?php the_field('price3'); ?>
+					<span>руб </span>
+				</p>
+				<p class="price-info">При оплате до
+					<span><?php the_field('date3'); ?></span> с учетом предоплаты.</p>
+			</div>
+		</div>
+		<div class="bottom-text">
+			<span>*</span> Для бронирования места на тренинге и фиксации суммы Вашей оплаты
+			<br> необходимо внести предоплату
+			<span class="blue">5 000 рублей</span>
+		</div>
+		<a class="btn btn-red">Забронировать</a>
+	</div>
+</div>
+<?php endwhile; ?>
+<?php endif; ?>

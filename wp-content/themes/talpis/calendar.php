@@ -15,9 +15,10 @@ get_header(); // подключаем header.php ?>
 			<?php get_template_part('partials/subscribeform'); ?>
 			<h2 class="sec-title">Календарь</h2>
 			<!-- FILTERS -->
-			<?php get_template_part('partials/calendar-filter'); ?>
+			
 			<div class="row">
 				<div class="col-md-8">
+				<?php get_template_part('partials/calendar-filter'); ?>
 					<?php
 						$args = array(
 							'post_type'  => 'seminar'

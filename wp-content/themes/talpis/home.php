@@ -12,6 +12,34 @@ get_header(); // подключаем header.php ?>
 		<h1 class="home-title">Авторский сайт
 			<br> Леонида Тальписа</h1>
 		<p class="subtitle">О ВсеЛенской терапии, жизни и смыслах</p>
+		<div class="seminar-widgets">
+			<div class="closest-seminar" id="semInfo">
+					<?php
+						$args = array(
+							'post_type'  => 'seminar'
+							);
+						$loop = new WP_Query( $args );
+							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+								<?php get_template_part('loop-widget-seminar');?>
+						<?php endwhile; ?>
+						<?php endif; ?>
+			</div>
+			<div class="calendar-widget">
+				<p class="calendar-widget__title">Календарь</p>
+					<div id="semDate">
+						<?php
+							$args = array(
+								'post_type'  => 'seminar'
+								);
+							$loop = new WP_Query( $args );
+								if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+									<?php get_template_part('loop-widget-seminar');?>
+							<?php endwhile; ?>
+							<?php endif; ?>
+					</div>
+					<a href="/calendar/" class="tocalendar">Смотреть все семинеры</a>
+			</div>
+		</div>
 	</div>
 </section>
 <!-- SECTION 2-->
