@@ -57,6 +57,7 @@ jQuery(document).ready(function() {
     asNavFor: '#semInfo',
     dots: false,
     centerMode: true,
+    infinite: false,
     focusOnSelect: true
   });
   jQuery('.seminar .seminar-images').slick({});
@@ -132,7 +133,7 @@ jQuery('.vseladd-additions .btn-more').on('click', function(e) {
     jQuery(this).removeClass('active');
   }
   else {
-    jQuery('.teta-courses .btn-more.active').removeClass('active');
+    jQuery('.vseladd-additions .btn-more.active').removeClass('active');
     jQuery(this).addClass('active');
     var target=jQuery(this).attr('data-target');
     jQuery('.seminar-plan.active').slideUp('slow').removeClass('active');

@@ -37,7 +37,7 @@ get_header(); // подключаем header.php ?>
 							<?php endwhile; ?>
 							<?php endif; ?>
 					</div>
-					<a href="/calendar/" class="tocalendar">Смотреть все семинеры</a>
+					<a href="/calendar/" class="tocalendar">Смотреть все семинары</a>
 			</div>
 		</div>
 	</div>

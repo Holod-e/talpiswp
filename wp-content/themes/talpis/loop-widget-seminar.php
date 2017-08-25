@@ -11,17 +11,17 @@
 		<?php
 			$image = get_field('seminar-photo');
 			if( !empty($image) ): ?>
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<div class="seminar-image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
 			<?php endif; ?>
 		<?php
 			$image2 = get_field('seminar-photo2');
 			if( !empty($image2) ): ?>
-				<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+					<div class="seminar-image" style="background-image: url(<?php echo $image2['url']; ?>);"></div>
 			<?php endif; ?>
 		<?php
 			$image3 = get_field('seminar-photo3');
 			if( !empty($image3) ): ?>
-				<img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+				<div class="seminar-image" style="background-image: url(<?php echo $image3['url']; ?>);"></div>
 			<?php endif; ?>
 		</div>
 		<div class="seminar-info">
