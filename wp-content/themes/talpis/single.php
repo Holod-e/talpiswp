@@ -16,6 +16,29 @@ get_header(); // подключаем header.php ?>
 			<div class="col-md-7 col-lg-8">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); // старт цикла ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
+							<div class="post-gallery">
+							<?php $image1 = get_field('postimg1');
+								if( !empty($image1) ): ?>
+									<div class="post-gallery__item" style="background-image: url(<?php echo $image1['url']; ?>);">
+										<p class="image-title"><?php echo $image1['title']; ?></p>
+										<span class="image-number">1/<span class="totalImages"></span></span>
+									</div>
+								<?php endif; ?>
+							<?php $image2 = get_field('postimg2');
+								if( !empty($image1) ): ?>
+									<div class="post-gallery__item" style="background-image: url(<?php echo $image2['url']; ?>);">
+										<p class="image-title"><?php echo $image2['title']; ?></p>
+										<span class="image-number">2/<span class="totalImages"></span></span>
+									</div>
+								<?php endif; ?>
+							<?php $image3 = get_field('postimg3');
+								if( !empty($image3) ): ?>
+									<div class="post-gallery__item" style="background-image: url(<?php echo $image3['url']; ?>);">
+										<p class="image-title"><?php echo $image3['title']; ?></p>
+										<span class="image-number">3/<span class="totalImages"></span></span>
+									</div>
+								<?php endif; ?>
+							</div>
 							<h1><?php the_title(); // заголовок поста ?></h1>
 							<?php the_content(); // контент ?>
 						</article>

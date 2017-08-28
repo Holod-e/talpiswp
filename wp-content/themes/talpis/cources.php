@@ -112,12 +112,31 @@ get_header(); // подключаем header.php ?>
 			<div class="row clearfix">
 				<div class="col-md-7">
 					<article>
-						<div class="post-image"></div>
+						<div class="post-gallery">
+
+								<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/author-ts1.jpg);">
+									<p class="image-title">Семинар «Точка зборки»</p>
+									<span class="image-number">1/<span class="">3</span></span>
+								</div>
+
+
+								<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/postimage.jpg);">
+									<p class="image-title">Семинар «Точка зборки»</p>
+									<span class="image-number">2/<span class="">3</span></span>
+								</div>
+
+
+								<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/postimage.jpg);">
+									<p class="image-title">Семинар «Точка зборки»</p>
+									<span class="image-number">3/<span class="">3</span></span>
+								</div>
+						</div>
 						<p class="post-title">Леонид Тальпис:
 							<br> «Мы все время пытаемся превратить жизнь в достижение результата и из-за этого теряем сам процесс жизни»</p>
 						<p class="text">О том, как найти в себе скрытые возможности для получения личного опыта и разрешения собственных вопросов, а также приобретения практических навыков для работы с клиентами.
 							<br>
 						</p>
+						<a class="more" style="margin-top: 40px;" href="../articles/leonid-talpis-my-vse-vremya-pytaemsya-prevratit-zhizn-v-dostizhenie-rezultata-i-iz-za-etogo-teryaem-sam-process-zhizni">Читать больше</a>
 					</article>
 				</div>
 				<div class="col-md-5">
@@ -127,6 +146,7 @@ get_header(); // подключаем header.php ?>
 					</aside>
 				</div>
 			</div>
+			<div class="line"></div>
 			<?php get_template_part('partials/banner2'); ?>
 		</div>
 	</div>

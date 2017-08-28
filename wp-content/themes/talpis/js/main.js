@@ -27,6 +27,13 @@ jQuery(document).ready(function() {
       // autoplay: true
   });
 
+  // Function for post gallery
+  var totalImages =  jQuery('.post-gallery .post-gallery__item').length;
+  jQuery('.post-gallery .totalImages').html(totalImages);
+  jQuery('.post-gallery').slick({});
+  
+ 
+
   jQuery('.awards-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -60,6 +67,9 @@ jQuery(document).ready(function() {
     infinite: false,
     focusOnSelect: true
   });
+  jQuery('#semDate').slick('slickGoTo', 2);
+
+
   jQuery('.seminar .seminar-images').slick({});
 
 

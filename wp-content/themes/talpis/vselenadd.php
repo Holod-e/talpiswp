@@ -232,7 +232,24 @@ get_header(); // подключаем header.php ?>
 	</div>
 </section>
 
-<?php get_template_part('partials/closestseminars'); ?>
+<!-- SECTION closest-seminars-->
+<section class="closest-seminars">
+	<div class="container">
+		<h2 class="sec-title">Ближайшие семинары</h2>
+		<div class="seminars">
+			<?php
+				$args = array(
+					'post_type'  => 'seminar',
+					'category_name' => 'vselenskaya-terapiya'
+					);
+				$loop = new WP_Query( $args );
+					if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<?php get_template_part('loop-closestseminar');?>
+				<?php endwhile; ?>
+				<?php endif; ?>
+		</div>
+	</div>
+</section>
 <?php get_template_part('partials/videorewiews'); ?>
 <?php get_template_part('partials/secbio'); ?>
 <?php get_template_part('partials/teraphy'); ?>

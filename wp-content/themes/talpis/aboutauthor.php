@@ -36,7 +36,27 @@ get_header(); // подключаем header.php ?>
 						<h2 class="sec-title">Я помогаю другим людям
 							<br> понять самих себя</h2>
 						<p class="sec-subtitle">За счёт того, что понял себя, насколько это возможно</p>
-						<div class="slider"></div>
+						<!-- <div class="slider"> -->
+							<div class="post-gallery">
+
+									<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/author-ts1.jpg);">
+										<p class="image-title">Семинар «Точка зборки»</p>
+										<span class="image-number">1/<span class="">3</span></span>
+									</div>
+
+
+									<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/postimage.jpg);">
+										<p class="image-title">Семинар «Точка зборки»</p>
+										<span class="image-number">2/<span class="">3</span></span>
+									</div>
+
+
+									<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/postimage.jpg);">
+										<p class="image-title">Семинар «Точка зборки»</p>
+										<span class="image-number">3/<span class="">3</span></span>
+									</div>
+							</div>
+						<!-- </div> -->
 						<p class="txt">Будучи потомком целого поколения врачей, я,  конечно, поступил в Медицинский. Но на третьем курсе пришло понимание того, что человек больше, чем просто физическое тело, и здоровье не ограничивается телом. Тогда я заинтересовался нетрадиционной
 							медициной, а уже через неё пришел к психологии. Параллельно с обучением в мединституте я начал посещать психологические курсы, но никого не трогал, никого не лечил, просто пытался разобраться и понять, про что это всё.
 							<br>
@@ -71,7 +91,26 @@ get_header(); // подключаем header.php ?>
 							<br> позволяет соответствовать высокому
 							<br> званию жителя вселенной</h2>
 						<p class="sec-subtitle">И помогает справиться с 4 страшными вирусами человечества</p>
-						<div class="slider"></div>
+						
+						<div class="post-gallery">
+
+								<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/author-vsel1.jpg);">
+									<p class="image-title">Семинар «ВсеЛенская терапия»</p>
+									<span class="image-number">1/<span class="">3</span></span>
+								</div>
+
+
+								<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/postimage.jpg);">
+									<p class="image-title">Семинар «ВсеЛенская терапия»</p>
+									<span class="image-number">2/<span class="">3</span></span>
+								</div>
+
+
+								<div class="post-gallery__item" style="background-image: url(<?php echo get_bloginfo('template_url');?>/img/postimage.jpg);">
+									<p class="image-title">Семинар «ВсеЛенская терапия»</p>
+									<span class="image-number">3/<span class="">3</span></span>
+								</div>
+						</div>
 						<p class="txt">Из всех знаний, что я получал за жизнь, из личного опыта работы над своими проблемами, я кропотливо выстраивал свою психологическую систему терапии. Я стремился к тому, чтобы она позволяла попадать сразу в самую суть вопроса, возникающего у человека
 							(или проблемы, если быть точнее). Второй важный её параметр — это универсальность. «Вселенка» позволяет прорабатывать любые ситуации: от психосоматики — до вопросов бизнеса.
 							<br>
@@ -134,7 +173,6 @@ get_header(); // подключаем header.php ?>
 					<img src="<?php echo get_bloginfo('template_url')?>/img/certificate.png" alt="">
 				</div>
 			</div>
-			<div class="slider-dots"></div>
 		</div>
 	</section>
 	<?php get_template_part('partials/teraphy'); ?>

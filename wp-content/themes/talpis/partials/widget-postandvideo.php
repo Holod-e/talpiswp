@@ -1,6 +1,9 @@
 <div class="widget-block" id="post-and-video">
-	<p class="widget-title posts-and-video">Статьи и видео</p>
+	<a href="/articles-and-videos/" class="widget-title posts-and-video">Статьи и видео</a>
 	<div class="widget-body">
+		<div class="search">
+			<?php get_template_part('searchform'); ?>
+		</div>
 		<?php $loop = new WP_Query( array(
 		 'post_type' => 'post',
 		 'publish' => true,

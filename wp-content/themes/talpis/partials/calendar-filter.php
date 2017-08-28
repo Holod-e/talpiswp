@@ -18,7 +18,7 @@
 		<label>Тренинги и Семинары:
 			<select name="seminar-name" class="seminar-name">
 				<option value="">Все</option>
-				<option value="Метафорические ассоциативные карты">Метафорические ассоциативные карты</option>
+				<option value="Метафорические ассоциативные карты">Метафорические  ассоциативные карты</option>
 				<option value="Точка Сборки">Точка Сборки</option>
 				<option value="Тета-Хилинг">Тета-Хилинг</option>
 				<option value="ВсеЛенская Терапия">ВсеЛенская Терапия</option>
