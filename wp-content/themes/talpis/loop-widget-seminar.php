@@ -54,6 +54,6 @@
 		<input type="hidden" class="seminar-place" name="seminar-place" value="<?php the_field('seminar-place')?>">
 		<input type="hidden" class="trainer-name" name="trainer-name" value="<?php the_field('trainer-name')?>">
 		<input type="hidden" class="seminar-date" name="seminar-date" value="<?php the_field('seminar-date')?>">
-		<p  class="seminar-date-text"><?php the_field('seminar-date')?> </p>
+		<p  class="seminar-date-text"><?php the_field('seminar-date-small')?> </p>
 	</div>
 </div>

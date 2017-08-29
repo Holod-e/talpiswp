@@ -181,7 +181,10 @@ get_header(); // подключаем header.php ?>
 			<?php
 				$args = array(
 					'post_type'  => 'seminar',
-					'category_name' => 'metaforicheskie-karty'
+					'category_name' => 'metaforicheskie-karty',
+					'orderby' => 'meta_value',
+          'meta_key' => 'seminar-date',
+          'order' => 'ASC'
 					);
 				$loop = new WP_Query( $args );
 					if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -191,9 +194,15 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 </section>
+
 <?php get_template_part('partials/videorewiews'); ?>
 <?php get_template_part('partials/secbio'); ?>
 <?php get_template_part('partials/teraphy'); ?>
 <?php get_template_part('partials/sertificate'); ?>
 
 <?php get_footer(); ?>
+
+<script>
+	jQuery(document).ready(hideEndSeminars());
+</script>
+

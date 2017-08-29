@@ -16,8 +16,11 @@ get_header(); // подключаем header.php ?>
 			<div class="closest-seminar" id="semInfo">
 					<?php
 						$args = array(
-							'post_type'  => 'seminar'
-							);
+								'post_type'  => 'seminar',
+								'orderby' => 'meta_value',
+                'meta_key' => 'seminar-date',
+                'order' => 'ASC'
+								);
 						$loop = new WP_Query( $args );
 							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 								<?php get_template_part('loop-widget-seminar');?>
@@ -29,7 +32,10 @@ get_header(); // подключаем header.php ?>
 					<div id="semDate">
 						<?php
 							$args = array(
-								'post_type'  => 'seminar'
+								'post_type'  => 'seminar',
+								'orderby' => 'meta_value',
+                'meta_key' => 'seminar-date',
+                'order' => 'ASC'
 								);
 							$loop = new WP_Query( $args );
 								if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -139,4 +145,28 @@ get_header(); // подключаем header.php ?>
 		<?php get_template_part('partials/banner2');?>
 	</div>
 </section>
+
 <?php get_footer(); // подключаем footer.php ?>
+
+<script>
+	jQuery(document).ready(function(){
+		  jQuery('#semInfo').slick({
+		    slidesToShow: 1,
+		    slidesToScroll: 1,
+		    arrows: false,
+		    fade: true,
+		    asNavFor: '#semDate'
+		  });
+		  jQuery('#semDate').slick({
+		    slidesToShow: 3,
+		    slidesToScroll: 1,
+		    asNavFor: '#semInfo',
+		    dots: false,
+		    centerMode: true,
+		    infinite: false,
+		    focusOnSelect: true
+		  });
+
+		calendarSync();
+	})
+</script>

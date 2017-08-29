@@ -1,115 +1,4 @@
-jQuery(document).ready(function() {
-	jQuery('.review-slider').slick({
-    dots: true,
-    infinite: false
-  });
 
-  jQuery('.widget-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    rows: 2
-  })
-
-  jQuery('.questions-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    rows: 3
-  })
-
-  jQuery('.author-sec2 .slider2').slick({
-      dots: true,
-      infinite: true,
-      arrows: false
-      // autoplay: true
-  });
-
-  // Function for post gallery
-  var totalImages =  jQuery('.post-gallery .post-gallery__item').length;
-  jQuery('.post-gallery .totalImages').html(totalImages);
-  jQuery('.post-gallery').slick({});
-  
- 
-
-  jQuery('.awards-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-      responsive: [
-        {
-          breakpoint: 720,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-      ]
-  });
-
-  jQuery('#semInfo').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '#semDate'
-  });
-  jQuery('#semDate').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '#semInfo',
-    dots: false,
-    centerMode: true,
-    infinite: false,
-    focusOnSelect: true
-  });
-  jQuery('#semDate').slick('slickGoTo', 2);
-
-
-  jQuery('.seminar .seminar-images').slick({});
-
-
-  jQuery('form.filter select.seminar-place').on('change', function(event) {
-    event.preventDefault();
-    var seminarPlace = jQuery( ".seminar-place option:selected").val();
-    if (seminarPlace != '') {
-      jQuery('.seminar.f1').removeClass('f1');
-      jQuery('input[value="'+ seminarPlace +'"]').closest('.seminar').addClass('f1');
-    }
-    else {
-      jQuery('.seminar').addClass('f1');
-    }
-  });
-
-  jQuery('form.filter select.seminar-name').on('change', function(event) {
-    event.preventDefault();
-    var seminarName = jQuery( ".seminar-name option:selected").val();
-    if (seminarName != '') {
-      jQuery('.seminar.f2').removeClass('f2');
-      jQuery('input[value="'+ seminarName +'"]').closest('.seminar').addClass('f2');
-    }
-    else {
-      jQuery('.seminar').addClass('f2');
-    }
-  });
-
-  jQuery('form.filter select.trainer-name').on('change', function(event) {
-    event.preventDefault();
-    var trainerName = jQuery( ".trainer-name option:selected").val();
-    if (trainerName != '') {
-      jQuery('.seminar.f3').removeClass('f3');
-      jQuery('input[value="'+ trainerName +'"]').closest('.seminar').addClass('f3');
-    }
-    else {
-      jQuery('.seminar').addClass('f3');
-    }
-  });
-
-});
 
 jQuery('.rewiews-block .read-more').on('click', function(e) {
   e.preventDefault();
@@ -268,18 +157,145 @@ jQuery('.btn-anchor').on('click', function(e) {
   anchorScroller(this, 1500);
 })
 
+function calendarSync() {
+    var datesArr = jQuery('.calendar-widget .seminar .seminar-date');
+    var formatDates = [];
+    var from, f;
+    for (i=0; i < datesArr.length; i++) {
+      from = datesArr[i].value.split("-");
+     f = new Date(from[0], from[1] - 1, from[2]);
+      formatDates[i] = f;
+    }
+    var now = new Date();
+    var nowDate = new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    formatDates.sort(function(a, b) {
+      var distancea = Math.abs(nowDate - a);
+      var distanceb = Math.abs(nowDate - b);
+      return distancea - distanceb; // sort a before b when the distance is smaller
+  });
+    afterdates = formatDates.filter(function(d) {
+      return d - nowDate > 0;
+  });
+    console.log(afterdates[0]);
+    var closestSeminar = afterdates[0].getFullYear() +'-'+ (afterdates[0].getMonth()+1 )+ '-' + afterdates[0].getDate();
+    console.log(closestSeminar);
+    jQuery('.calendar-widget .seminar-date[value="' + closestSeminar + '"]').closest('.seminar').addClass('closestSem');
+    var sliderPosition = jQuery('.calendar-widget .closestSem').index();
+    console.log(sliderPosition);
+    jQuery('#semDate').slick('slickGoTo', sliderPosition);
+}
 
-// var modal = new tingle.modal({
-//     footer: false,
-//     stickyFooter: false,
-//     cssClass: ['custom-class-1', 'custom-class-2']
 
-// });
+function hideEndSeminars() {
+      var datesArr = jQuery('.closest-seminars .seminar .seminar-date');
+      var formatDates = [];
+      var from, f;
+      for (i=0; i < datesArr.length; i++) {
+        from = datesArr[i].value.split("-");
+       f = new Date(from[0], from[1] - 1, from[2]);
+        formatDates[i] = f;
+      }
+      var now = new Date();
+      var nowDate = new Date(now.getFullYear(),now.getMonth(),now.getDate());
+      formatDates.sort(function(a, b) {
+        var distancea = Math.abs(nowDate - a);
+        var distanceb = Math.abs(nowDate - b);
+        return distancea - distanceb; // sort a before b when the distance is smaller
+    });
+      afterdates = formatDates.filter(function(d) {
+        return d - nowDate > 0;
+    });
+      var closestSeminar = afterdates[0].getFullYear() +'-'+ (afterdates[0].getMonth()+1 )+ '-' + afterdates[0].getDate();
+      jQuery('.closest-seminars .seminar-date[value="' + closestSeminar + '"]').closest('.seminar').addClass('closestSem');
+      jQuery('.closestSem').prevAll('.seminar').addClass('seminar-finished').remove();
+  }
 
-//   jQuery('a.modal-btn').on('click', function(event){
-//    event.preventDefault();
-//    var modalId = jQuery(this).attr('href');
-//    modal.setContent(jQuery(modalId).html());
-//    modal.open();
-//   });
-// custom scripts
+
+jQuery(document).ready(function() {
+    jQuery('.review-slider').slick({
+      dots: true,
+      infinite: false
+    });
+
+    jQuery('.widget-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      rows: 2
+    })
+
+    jQuery('.questions-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      rows: 3
+    })
+
+    jQuery('.author-sec2 .slider2').slick({
+        dots: true,
+        infinite: true,
+        arrows: false
+        // autoplay: true
+    });
+
+    // Function for post gallery
+    var totalImages =  jQuery('.post-gallery .post-gallery__item').length;
+    jQuery('.post-gallery .totalImages').html(totalImages);
+    jQuery('.post-gallery').slick({});
+
+    jQuery('.awards-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+        responsive: [
+          {
+            breakpoint: 720,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          }
+        ]
+    });
+    jQuery('.seminar .seminar-images').slick({});
+
+    jQuery('form.filter select.seminar-place').on('change', function(event) {
+      event.preventDefault();
+      var seminarPlace = jQuery( ".seminar-place option:selected").val();
+      if (seminarPlace != '') {
+        jQuery('.seminar.f1').removeClass('f1');
+        jQuery('input[value="'+ seminarPlace +'"]').closest('.seminar').addClass('f1');
+      }
+      else {
+        jQuery('.seminar').addClass('f1');
+      }
+    });
+
+    jQuery('form.filter select.seminar-name').on('change', function(event) {
+      event.preventDefault();
+      var seminarName = jQuery( ".seminar-name option:selected").val();
+      if (seminarName != '') {
+        jQuery('.seminar.f2').removeClass('f2');
+        jQuery('input[value="'+ seminarName +'"]').closest('.seminar').addClass('f2');
+      }
+      else {
+        jQuery('.seminar').addClass('f2');
+      }
+    });
+
+    jQuery('form.filter select.trainer-name').on('change', function(event) {
+      event.preventDefault();
+      var trainerName = jQuery( ".trainer-name option:selected").val();
+      if (trainerName != '') {
+        jQuery('.seminar.f3').removeClass('f3');
+        jQuery('input[value="'+ trainerName +'"]').closest('.seminar').addClass('f3');
+      }
+      else {
+        jQuery('.seminar').addClass('f3');
+    }
+  });
+});

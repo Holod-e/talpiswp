@@ -20,5 +20,6 @@
 		<p class="seminar-txt"><?php the_field('seminar-description'); ?></p>
 		<span class="date"><?php the_field('seminar-start-date'); ?></span>
 		<a class="more">Подробнее</a>
+		<input type="hidden" name="seminar-date" class="seminar-date" value="<?php the_field('seminar-date')?>" >
 	</div>
 </div>
